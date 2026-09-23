@@ -1,0 +1,38 @@
+load 'frase_8000';
+
+Fs=8000;
+T=1/Fs;
+f0=1000;
+
+k=0:length(orig)-1;
+%x=orig+100*cos(2*pi*f0*k*T + 0.1*pi);
+x=100*cos(2*pi*f0*k*T + 0.1*pi);
+
+rho=0.99;
+
+b=[1 -2*cos(2*pi*f0*T) 1];
+a=[1 -2*rho*cos(2*pi*f0*T) rho^2];
+
+C=sum(a)/sum(b);
+b=C*b;
+
+
+[H,f]=freqz(b,a,512,Fs);
+
+plot(f,20*log10(abs(H)))
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+b10=b(1); b11=b(2); b12=b(3);
+a1=a(2); a2=a(3);
+
+sx1=0; sx2=0; sy1=0; sy2=0;
+
+for k=1:length(x);
+    
+    xc=x(k);
+    y(k)=b10*xc+b11*sx1+b12*sx2 - a1*sy1-a2*sy2;
+    
+    sx2=sx1; sx1=xc; sy2=sy1; sy1=y(k);
+end;
