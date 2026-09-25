@@ -3,10 +3,3 @@ public/
 .quartz-cache/
 quartz/.quartz-cache/
 .DS_Store
-
-# Gli appunti vengono copiati qui da scripts/sync-content.sh
-# (in locale) o dalla GitHub Action (in CI): non li versioniamo
-# due volte, restano nella root della repo.
-content/Anno 1/
-content/Anno 2/
-content/Anno 3/
