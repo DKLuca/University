@@ -39,9 +39,17 @@ jobs:
         working-directory: sito-quartz
         run: npm ci
 
+      - name: Verifica content dopo npm ci
+        working-directory: sito-quartz
+        run: find content -type f | wc -l
+
       - name: Installa i plugin di Quartz
         working-directory: sito-quartz
         run: npx quartz plugin install --from-config
+
+      - name: Verifica content dopo plugin install
+        working-directory: sito-quartz
+        run: find content -type f | wc -l
 
       - name: Build del sito
         working-directory: sito-quartz
