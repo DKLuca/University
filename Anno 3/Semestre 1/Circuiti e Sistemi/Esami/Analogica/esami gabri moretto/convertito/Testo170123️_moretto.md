@@ -1,0 +1,346 @@
+---
+fonte: "Testo170123️_moretto.pdf"
+metodo: "testo-pdf"
+da_rivedere: false
+---
+
+Complementi di Circuiti e sistemi
+                   elettronici
+                                        Anno accademico 2022/2023
+
+
+Prova scritta di Elettronica Analogica
+                                                  17 Gennaio 2023
+
+                                                                               5V            5V
+
+
+
+                                                                    (8/1) M9                 M10 (8/1)   1
+                                                                                                           𝜇 𝐶 = 100𝜇𝐴/𝑉 $
+                                                       5V
+                                                                          Ve                   Vf        2 ! "#
+                                                                                    3.85 V
+                                              40uA                  (8/1) M7                  M8 (8/1)   1
+                                                                                                           𝜇 𝐶 = 40𝜇𝐴/𝑉 $
+                           R1                                                                            2 % "#
+                                                        Va
+                                                                          Vd
+                            Cf                    M1   Va    M2                                          𝑉&! = +𝑉&% + = 0.6𝑉
+                                        INp                                                   Vout
+                                                                   INm
+                            5V
+  Cs                   -                                          (2/1)                                  𝑟" = 1 𝑀Ω
+                                 Vout     (2/1)
+                       +                                           (5/1) M6         1.2 V     M5 (5/1)
+ Vin                                                                                                     𝐶' = 4𝑛𝐹
+                2.5V                                                Vc
+                                                       Vb                                                𝐶( = 400𝑝𝐹
+                                                                                    0.8 V
+                                                                   (10/1) M3                 M4 (10/1)
+                                                                                                         𝑅) = 1𝑀Ω
+
+
+                       a)                                                           b)
+
+
+
+
+Considerando il circuito di acquisizione di un sensore piezoelettrico riportato in figura,
+rispondere ai seguenti quesiti.
+
+       1. (Punti 6) Calcolare l’espressione del guadagno ideale di segnale tra Vin(s) e Vout(s) dello
+          schema di figura (a)
+       2. (Punti 7) Considerando che lo schema dell’amplificatore di figura (b), calcolare tutte le
+          tensioni e le correnti dello schema quando Vin è uguale a 0.
+       3. (Punti 8) Tracciare il diagramma asintotico del guadagno d’anello in frequenza e
+          calcolare la frequenza di attraversamento dell’asse a 0db e il margine di fase.
+       4. (Punti 7) Tracciare il diagramma asintotico del modulo del guadagno reale.
+       5. (Punti 5) Stimare la risposta ad un gradino di tensione in ingresso pari a 100mV
+
+
+
+
+Via delle Scienze, 206 – 33100 Udine
+CF 80014550307 - P.IVA 01071600306 – IBAN IT65Z0200812310000040469457 – BIC swift UNCRITM1UN6
+         Complementi di Circuiti e sistemi
+                 elettronici
+                                           Anno accademico 2022/2023
+
+
+                                               Soluzioni
+         𝒗𝒐𝒖𝒕 (𝒔)    :𝒔𝑪 𝑹𝒇
+    1.   𝒗𝒊𝒏 (𝒔)
+                  = 𝒔𝑪 𝑹𝒔 =𝟏
+                      𝒇 𝒇
+
+    2. V+= V-=2.5V
+       ID1= ID2=-20uA
+       | Vgs1,2 |=1.1V
+       Va=3.6V
+       ID3= ID4=40uA
+       ID5= ID6=20uA
+       ID9= ID10=ID7= ID8= -20uA
+        Vgs5,6=0.8V
+       | Vgs7,8,9,10 |=0.85V
+       Vb,c=0.4V
+       Ve,f=4.7V
+       Vd=4.15V
+       Vo= 2.5V
+
+    3.   𝐺?@@A (0) ≅ −𝑔𝑚1,2 '𝑅𝐷 5 ∥ 𝑅𝐷 8 ( = −4965
+         𝑅' ( ≅ 𝑟)( (1 + 𝑔𝑚( (𝑟)* ∥ 𝑟)+ )) = 101 𝑀Ω , 𝑅' , ≅ 𝑟), (1 + 𝑔𝑚, 𝑟-) )) = 161 𝑀Ω
+              𝑔𝑚-,+
+         𝑓. ≅        = 3.18𝑘𝐻𝑧
+              2𝜋 𝐶/
+                                𝑓.              𝑓.              𝑓.
+         𝜑0 ≅ 180° − tan−1 ? @ − tan−1 ? @ + tan−1 A B = 90°
+                               𝑓1-             𝑓1+             𝑓2-
+    4. e 5.
+                 $$%# #
+                  $&' #    !&( " !)$$* "              !!"# (#)
+                                                                 2.6V
+
+                                                      2.5V
+                            ##     !!" "
+                20db
+
+
+                                                                                          #
+
+
+
+
+Via delle Scienze, 206 – 33100 Udine
+CF 80014550307 - P.IVA 01071600306 – IBAN IT65Z0200812310000040469457 – BIC swift UNCRITM1UN6
+         Complementi di Circuiti e sistemi
+                 elettronici
+                                     Anno accademico 2022/2023
+
+
+
+
+                                       Svolgimento
+    1. Calcolare l’espressione del guadagno ideale di segnale tra Vin(s) e Vout(s) dello schema
+       di figura (a)
+       Lo schema è retroazionato negativemente, considerando l’amplificatore avere un
+       guadagno molto alto a tutte le frequenze la funzione di trasferimento vout(s) e vin(s)
+       tende ad essere come la seguente.
+                                        𝒗𝒐𝒖𝒕 (𝒔)     −𝒔𝑪𝒔 𝑹𝒇
+                                                 =
+                                         𝒗𝒊𝒏 (𝒔)   𝒔𝑪𝒇 𝑹𝒇 + 𝟏
+    2. Considerando che lo schema dell’amplificatore di figura (b), calcolare tutte le tensioni
+       e le correnti dello schema quando Vin è uguale a 0.
+       In ingresso ci sarà
+       V+= V-=2.5V
+       Considerando lo stadio differenziale circa in equilibrio avremo
+       ID1= ID2=-20uA
+       Inoltre, possiamo calcolare
+       | Vgs1,2 |=1.1V
+       Quindi Va=3.6V
+       Ipotizzando tutti i mos in saturazione M3, e M4 sono due generatori di corrente
+       ID3= ID4=40uA
+       Quindi, i mos cascode M5 e M6
+       ID5= ID6=20uA
+       ID9= ID10=ID7= ID8= -20uA
+        Vgs5,6=0.8V
+       | Vgs7,8,9,10 |=0.85V
+       Vb,c=0.4V
+       Ve,f=4.7V
+       Vd=4.15V
+       Vo= 2.5V
+
+    3. Tracciare il diagramma asintotico del guadagno d’anello in frequenza e calcolare la
+       frequenza di attraversamento dell’asse a 0db e il margine di fase.
+       Considerando la polarizzazione abbiamo i seguenti valori di trasconduttanza
+       trascurando l’effetto della modulazione di canale.
+
+
+
+
+Via delle Scienze, 206 – 33100 Udine
+CF 80014550307 - P.IVA 01071600306 – IBAN IT65Z0200812310000040469457 – BIC swift UNCRITM1UN6
+         Complementi di Circuiti e sistemi
+                 elettronici
+                                     Anno accademico 2022/2023
+
+                   𝑔𝑚-,+ ≅ 80𝜇𝐴/𝑉
+
+                  𝑔𝑚(,3 ≅ 200𝜇𝐴/𝑉
+
+                  𝑔𝑚4,, ≅ 160𝜇𝐴/𝑉
+
+         Lo schema può essere tagliato in corrispondenza dell’ingresso invertente come
+         riportato in figura
+
+
+
+
+                                                           M9                    M10
+
+                                                       Ve                          Vf
+
+                                                           M7                    M8
+                                                                                                 R1
+                                     Va
+                                                       Vd
+                        M1         Va      M2                                                   Cf
+                                                   Vtest                                                   Gloop Vtest
+
+
+
+                                                           M6                     M5                  Cs
+
+                                                  Vc
+                                  Vb
+
+                                                                r03                 r04
+
+
+                                𝐺?@@A (0) ≅ −𝑔𝑚1,2 '𝑅𝐷 5 ∥ 𝑅𝐷 8 ( = −4965
+
+                                𝑅' ( ≅ 𝑟)( (1 + 𝑔𝑚( (𝑟)* ∥ 𝑟)+ )) = 101 𝑀Ω
+
+                                   𝑅' , ≅ 𝑟), (1 + 𝑔𝑚, 𝑟-) )) = 161 𝑀Ω
+
+
+
+                                            :𝐺?@@A (0):IJ ≅ 74𝑑𝑏
+
+
+
+
+Via delle Scienze, 206 – 33100 Udine
+CF 80014550307 - P.IVA 01071600306 – IBAN IT65Z0200812310000040469457 – BIC swift UNCRITM1UN6
+         Complementi di Circuiti e sistemi
+                 elettronici
+                                     Anno accademico 2022/2023
+
+         Il guadagno d’anello ha 2 poli (due capacità indipendenti) e 1 zero dato che la funzione
+         di trasferimento per 𝜔 → ∞ tende a 0 ed è presente una capacità in parallelo ad una
+         resistenza in serie alla rete del guadagno d’anello.
+                                                                (1 + 𝑠𝜏𝑧1 )
+                                𝐺?@@A (𝑠) = 𝐺?@@A (0)
+                                                          (1 + 𝑠𝜏𝑝1 )(1 + 𝑠𝜏𝑝2 )
+
+         Adottando il metodo delle costanti di tempo per calcolare il valore dei poli otteniamo
+
+         Dove
+
+                                               𝜏𝑝1 + 𝜏𝑝2 = 𝐶𝑓 𝑅′ 𝑓 + 𝐶𝑠 𝑅′ 𝑠
+                                            ?                 1         1
+                                              𝜔𝑝1 + 𝜔𝑝2 =          +
+                                                           𝐶𝑓 𝑅 𝑓 𝐶1 𝑅′′ 𝑠
+                                                                ′′
+
+
+
+         Dove
+
+                                                    𝑅:; = 𝑅- = 1𝑀Ω
+
+                                           𝑅::; ≅ 𝑅' ( ∥ 𝑅' , ∥ 𝑅- = 984𝑘Ω
+
+         Che possono essere calcolate anche usando il teorema di Miller.
+
+                                          𝑅: / ≅ N𝑅' ( ∥ 𝑅' , O + 𝑅- = 63𝑀Ω
+                                             𝑅:: / ≅ N𝑅' ( ∥ 𝑅' , O = 62𝑀Ω
+
+
+
+         Quindi i poli saranno
+                                                      𝑓1< = 0.63𝐻𝑧
+                                                      𝑓1= = 405𝐻𝑧
+
+
+         Lo zero può essere calcolato considerando
+
+
+
+                                                                1
+                                                      𝑠2- = −
+                                                              𝐶; 𝑅-
+                                                      𝑓2- ≅ 400𝐻𝑧
+
+
+
+
+Via delle Scienze, 206 – 33100 Udine
+CF 80014550307 - P.IVA 01071600306 – IBAN IT65Z0200812310000040469457 – BIC swift UNCRITM1UN6
+         Complementi di Circuiti e sistemi
+                 elettronici
+                                     Anno accademico 2022/2023
+
+         Essendo polo e zero quasi coincidenti possiamo approssimare 𝑓2- ≤ 𝑓
+                                                                   𝑔𝑚1,2
+                                                  :𝐺?@@A (𝜔): ≈
+                                                                   𝜔 𝐶𝑠
+         Quindi si può stimare la frequenza di taglio
+
+                                                        𝑔𝑚-,+
+                                                 𝑓. ≅           = 3.18𝑘𝐻𝑧
+                                                        2𝜋 𝐶/
+         Il margine di fase sarà
+
+                                             𝑓.          𝑓.          𝑓.
+                         𝜑0 ≅ 180° − tan−1 ? @ − tan−1 ? @ + tan−1 A B = 90°
+                                            𝑓1-         𝑓1+         𝑓2-
+
+                                   "$%%! !
+
+
+
+
+                                                           X     0
+                                                                 X
+                                                          !!" !!' !#
+                                                                !&"
+
+    4. Tracciare il diagramma asintotico del modulo del guadagno reale.
+         Lo schema ha un guadagno diretto
+                                                    lim 𝐺INO (𝜔) = 1
+                                                   K→M
+
+                                         lim :𝐺NI (𝜔) 𝐺?@@A (𝜔): = 0
+                                        K→M
+
+         Quindi il contributo diretto risulterà dominante
+
+
+
+
+Via delle Scienze, 206 – 33100 Udine
+CF 80014550307 - P.IVA 01071600306 – IBAN IT65Z0200812310000040469457 – BIC swift UNCRITM1UN6
+         Complementi di Circuiti e sistemi
+                 elettronici
+                                     Anno accademico 2022/2023
+
+                       $$%# #
+                        $&' #            !&( " !)$$* "
+
+
+
+
+                                           ##        !!" "
+
+                     20db
+
+
+
+    5. Stimare la risposta ad un gradino di tensione in ingresso pari a 100m
+
+
+             !!"# (#)
+                                 2.6V
+
+             2.5V
+
+
+
+                                                                                                #
+
+
+
+
+Via delle Scienze, 206 – 33100 Udine
+CF 80014550307 - P.IVA 01071600306 – IBAN IT65Z0200812310000040469457 – BIC swift UNCRITM1UN6

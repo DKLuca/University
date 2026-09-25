@@ -1,0 +1,832 @@
+---
+fonte: "An2_2026_pres15_integrali_curvilinei.pdf"
+metodo: "testo-pdf"
+da_rivedere: false
+---
+
+Integrali curvilinei
+
+                 L.Freddi
+
+
+               April 16, 2026
+
+
+
+
+L.Freddi                          April 16, 2026   1 / 18
+Integrali curvilinei (del primo tipo)
+Definizione
+Sia φ : [a, b] → Rn una curva C 1 e sia A un aperto di Rn contenente φ([a, b]).
+Sia f ∈ C(A, R).
+
+
+
+
+         L.Freddi                                             April 16, 2026      2 / 18
+Integrali curvilinei (del primo tipo)
+Definizione
+Sia φ : [a, b] → Rn una curva C 1 e sia A un aperto di Rn contenente φ([a, b]).
+Sia f ∈ C(A, R). Si definisce integrale (curvilineo) della funzione f lungo la
+curva φ il numero
+
+
+
+
+         L.Freddi                                             April 16, 2026      2 / 18
+Integrali curvilinei (del primo tipo)
+Definizione
+Sia φ : [a, b] → Rn una curva C 1 e sia A un aperto di Rn contenente φ([a, b]).
+Sia f ∈ C(A, R). Si definisce integrale (curvilineo) della funzione f lungo la
+curva φ il numero
+                         Z          Z b
+                            f ds :=     f (φ(t))|φ′ (t)| dt.
+                          φ          a
+
+
+
+
+         L.Freddi                                             April 16, 2026      2 / 18
+Integrali curvilinei (del primo tipo)
+Definizione
+Sia φ : [a, b] → Rn una curva C 1 e sia A un aperto di Rn contenente φ([a, b]).
+Sia f ∈ C(A; R). Si definisce integrale (curvilineo) della funzione f lungo la
+curva φ il numero
+                         Z          Z b
+                            f ds :=     f (φ(t))|φ′ (t)| dt.
+                          φ                a
+
+Osserviamo che
+     nel caso f (x) = 1 si ha
+                                Z          Z b
+                                    ds =           |φ′ (t)| dt = ℓ(φ)
+                                φ              a
+
+
+
+
+         L.Freddi                                                       April 16, 2026   3 / 18
+Integrali curvilinei (del primo tipo)
+
+Proprietà dell’integrale curvilineo:
+     vale la proprietà di linearità
+     Z                      Z         Z
+        (αf +βg) ds = α f ds+β          g ds            (α, β ∈ R, f, g : A → R continue)
+       φ                     φ              φ
+
+     vale la proprietà di monotonia e, in particolare, quella del modulo
+                                   Z            Z
+                                      f ds ≤       |f | ds
+                                        φ           φ
+
+     eseguendo nell’integrale il cambiamento di variabile t = g(s) si vede che
+                                         Z          Z
+                           ψ ∼ φ =⇒         f ds =      f ds
+                                                ψ            φ
+
+
+
+
+           L.Freddi                                                   April 16, 2026   4 / 18
+Integrali curvilinei (del primo tipo)
+
+Proprietà dell’integrale curvilineo:
+     vale la proprietà di linearità
+     Z                      Z         Z
+        (αf +βg) ds = α f ds+β          g ds                (α, β ∈ R, f, g : A → R continue)
+       φ                     φ              φ
+
+     vale la proprietà di monotonia e, in particolare, quella del modulo
+                                   Z            Z
+                                      f ds ≤       |f | ds
+                                        φ               φ
+
+     eseguendo nell’integrale il cambiamento di variabile t = g(s) si vede che
+                                         Z          Z
+                           ψ ∼ φ =⇒         f ds =      f ds
+                                                    ψ            φ
+
+Si può quindi definire l’integrale di f lungo un cammino γ come l’integrale di f
+lungo una qualsiasi parametrizzazione φ di γ:
+                              Z           Z
+                                 f ds :=     f ds, φ ∈ γ.
+                                 γ              φ
+
+           L.Freddi                                                       April 16, 2026   4 / 18
+Integrali curvilinei (del primo tipo)
+
+Esercizio
+Calcolare l’integrale della funzione f (x, y) = ex+y lungo la curva φ(t) = (t, 2t),
+t ∈ [0, 1].
+
+
+
+
+         L.Freddi                                                April 16, 2026   5 / 18
+Integrali curvilinei (del primo tipo)
+
+Esercizio
+Calcolare l’integrale della funzione f (x, y) = ex+y lungo la curva φ(t) = (t, 2t),
+t ∈ [0, 1].
+                                        √
+Si ha φ′ (t) = (1, 2), quindi |φ′ (t)| = 5. Allora
+     Z           Z 1                      Z 1 √          √ e3t       √ e3 − 1
+                                ′
+         f ds =      f (φ(t))|φ (t)| dt =     e3t 5 dt = 5[ ]10 = 5
+       φ          0                        0                  3            3
+
+
+
+
+         L.Freddi                                                April 16, 2026   5 / 18
+Curve C 1 e regolari a tratti
+
+Una curva del tipo
+
+non è di classe C 1 . Estendiamo l’integrale curvilineo in modo da poter includere
+anche casi di questo tipo.
+Definizione
+Una curva φ : [a, b] → Rn si dice C 1 a tratti se esiste una partizione
+a = a0 < a1 < ... < an = b tale che φ|[ai−1 ,ai ] è di classe C 1 per i = 1, ..., n.
+
+
+
+
+          L.Freddi                                                   April 16, 2026     6 / 18
+Curve C 1 e regolari a tratti
+
+Una curva del tipo
+
+non è di classe C 1 . Estendiamo l’integrale curvilineo in modo da poter includere
+anche casi di questo tipo.
+Definizione
+Una curva φ : [a, b] → Rn si dice C 1 a tratti se esiste una partizione
+a = a0 < a1 < ... < an = b tale che φ|[ai−1 ,ai ] è di classe C 1 per i = 1, ..., n.
+Se, inoltre, ciascuna delle φ|[ai−1 ,ai ] è regolare (cioè φ′ (t) ̸= 0 per ogni
+t ∈ (ai−1 , ai )), diremo che φ è regolare a tratti.
+
+
+
+
+          L.Freddi                                                   April 16, 2026     6 / 18
+Curve C 1 e regolari a tratti
+
+Una curva del tipo
+
+non è di classe C 1 . Estendiamo l’integrale curvilineo in modo da poter includere
+anche casi di questo tipo.
+Definizione
+Una curva φ : [a, b] → Rn si dice C 1 a tratti se esiste una partizione
+a = a0 < a1 < ... < an = b tale che φ|[ai−1 ,ai ] è di classe C 1 per i = 1, ..., n.
+Se, inoltre, ciascuna delle φ|[ai−1 ,ai ] è regolare (cioè φ′ (t) ̸= 0 per ogni
+t ∈ (ai−1 , ai )), diremo che φ è regolare a tratti.
+
+Definizione
+Sia φ : [a, b] → Rn una curva C 1 a tratti come sopra. Sia A un aperto di Rn
+contenente φ([a, b]). Sia f ∈ C(A; R). Si definisce integrale di f lungo φ il
+numero                Z           n Z ai
+                                  X
+                          f ds :=           f (φ(t))|φ′ (t)| dt.
+                         φ          i=1   ai−1
+
+          L.Freddi                                                   April 16, 2026     6 / 18
+Esercizio
+Calcolare l’integrale della funzione f (x, y) = ex+y sulla curva
+φ(t) = (t, min{2t, 2}), t ∈ [0, 2].
+
+
+
+
+        L.Freddi                                            April 16, 2026   7 / 18
+Esercizio
+Calcolare l’integrale della funzione f (x, y) = ex+y sulla curva
+φ(t) = (t, min{2t, 2}), t ∈ [0, 2].
+Si ha φ(t) = (t, g(t)) con g(t) = min{2t, 2}, t ∈ [0, 2]. Il sostegno di φ è il
+grafico di g che più esplicitamente è
+                                                                                      y=g(x)
+
+                  (                                                               2
+                      2t   se t ∈ [0, 1]
+         g(t) =
+                      2    se t ∈ [1, 2]
+                                                                                  0       1     2      x
+
+
+Dunque φ è C 1 in [0, 1] e in [1, 2] e si ha
+               (                                        (√
+       ′         (1, 2) se t ∈ [0, 1]           ′          5                                   se t ∈ [0, 1]
+     φ (t) =                               =⇒ |φ (t)| =
+                 (1, 0) se t ∈ [1, 2]                    1                                     se t ∈ [1, 2]
+Allora
+                                                                              √
+           Z               Z 1
+                                     3t
+                                          √            Z 2
+                                                                 t+2           5 3
+                 f ds =          e            5 dt +         e         dt =     (e − 1) + e4 − e3
+             φ              0                           1                     3
+
+          L.Freddi                                                                             April 16, 2026   7 / 18
+Curve in coordinate polari
+Sia a ̸= 0. In coordinate polari
+     ρ = aθ, è la spirale di Archimede;
+     ρ = eaθ è la spirale logaritmica;
+         a
+     ρ = , è la spirale iperbolica.
+         θ
+
+
+
+
+         L.Freddi                          April 16, 2026   8 / 18
+Curve in coordinate polari
+Sia a ̸= 0. In coordinate polari
+     ρ = aθ, è la spirale di Archimede;
+     ρ = eaθ è la spirale logaritmica;
+         a
+     ρ = , è la spirale iperbolica.
+         θ
+
+In generale, l’equazione di una curva piana in coordinate polari è
+                              ρ = ρ(θ),    θ0 ≤ θ ≤ θ 1
+detta equazione polare.
+
+
+
+
+         L.Freddi                                                April 16, 2026   8 / 18
+Curve in coordinate polari
+Sia a ̸= 0. In coordinate polari
+     ρ = aθ, è la spirale di Archimede;
+     ρ = eaθ è la spirale logaritmica;
+         a
+     ρ = , è la spirale iperbolica.
+         θ
+
+In generale, l’equazione di una curva piana in coordinate polari è
+                              ρ = ρ(θ),    θ0 ≤ θ ≤ θ 1
+detta equazione polare.
+
+Le equazioni parametriche in coordinate cartesiane sono
+                     
+                        x(θ) = ρ(θ) cos θ
+                                            , θ ∈ [θ0 , θ1 ].
+                        y(θ) = ρ(θ) sen θ
+Indicata con φ(θ) := (x(θ), y(θ)) si ha
+                        p                        p
+              |φ′ (θ)| = |x′ (θ)|2 + |y ′ (θ)|2 = |ρ(θ)|2 + |ρ′ (θ)|2 .
+
+         L.Freddi                                                 April 16, 2026   8 / 18
+Curve in coordinate polari
+Data una curva polare
+                          ρ = ρ(θ),        θ0 ≤ θ ≤ θ 1 ,
+ricordiamo che                       p
+                        |φ′ (θ)| =       |ρ(θ)|2 + |ρ′ (θ)|2
+
+
+
+
+        L.Freddi                                               April 16, 2026   9 / 18
+Curve in coordinate polari
+Data una curva polare
+                               ρ = ρ(θ),       θ0 ≤ θ ≤ θ 1 ,
+ricordiamo che                           p
+                            |φ′ (θ)| =       |ρ(θ)|2 + |ρ′ (θ)|2
+
+Se ρ di classe C 1 , si ha quindi
+     la curva è regolare se e solo se
+                           |ρ(θ)|2 + |ρ′ (θ)|2 > 0      ∀ θ ∈ (θ0 , θ1 )
+
+
+
+
+          L.Freddi                                                         April 16, 2026   9 / 18
+Curve in coordinate polari
+Data una curva polare
+                               ρ = ρ(θ),       θ0 ≤ θ ≤ θ 1 ,
+ricordiamo che                           p
+                            |φ′ (θ)| =       |ρ(θ)|2 + |ρ′ (θ)|2
+
+Se ρ di classe C 1 , si ha quindi
+     la curva è regolare se e solo se
+                           |ρ(θ)|2 + |ρ′ (θ)|2 > 0      ∀ θ ∈ (θ0 , θ1 )
+
+     se f = f (ρ, θ) è una funzione continua in un intorno del sostegno di φ, allora
+                    Z           Z θ1            p
+                         f ds =      f (ρ(θ), θ) |ρ(θ)|2 + |ρ′ (θ)|2 dθ.
+                      γ             θ0
+
+
+
+
+          L.Freddi                                                         April 16, 2026   9 / 18
+Curve in coordinate polari
+Data una curva polare
+                               ρ = ρ(θ),        θ0 ≤ θ ≤ θ 1 ,
+ricordiamo che                            p
+                            |φ′ (θ)| =        |ρ(θ)|2 + |ρ′ (θ)|2
+
+Se ρ di classe C 1 , si ha quindi
+     la curva è regolare se e solo se
+                           |ρ(θ)|2 + |ρ′ (θ)|2 > 0       ∀ θ ∈ (θ0 , θ1 )
+
+     se f = f (ρ, θ) è una funzione continua in un intorno del sostegno di φ, allora
+                    Z           Z θ1            p
+                         f ds =      f (ρ(θ), θ) |ρ(θ)|2 + |ρ′ (θ)|2 dθ.
+                      γ             θ0
+
+     la lunghezza della curva è data da
+                                   Z θ1 p
+                          L(γ) =         |ρ(θ)|2 + |ρ′ (θ)|2 dθ.
+                                         θ0
+
+
+          L.Freddi                                                          April 16, 2026   9 / 18
+Curve in coordinate polari
+Esercizio
+Sia a > 0. Data la curva (cardioide) di equazione polare
+                            ρ = a(1 + cos θ),   0 ≤ θ ≤ 2π
+  1   studiarne la regolarità,
+  2   disegnarne il sostegno,
+  3   calcolarne la lunghezza.
+
+
+
+
+          L.Freddi                                           April 16, 2026   10 / 18
+Curve in coordinate polari
+Esercizio
+Sia a > 0. Data la curva (cardioide) di equazione polare
+                              ρ = a(1 + cos θ),   0 ≤ θ ≤ 2π
+  1     studiarne la regolarità,
+  2     disegnarne il sostegno,
+  3     calcolarne la lunghezza.
+
+Si ha
+|ρ(θ)|2 +|ρ′ (θ)|2 = a2 [(1+cos θ)2 +sen2 θ] = 2a2 [1+cos θ] = 0 ⇐⇒ cos θ = −1
+quindi ρ(π) = ρ′ (π) = 0.
+
+
+
+
+            L.Freddi                                           April 16, 2026   10 / 18
+Curve in coordinate polari
+Esercizio
+Sia a > 0. Data la curva (cardioide) di equazione polare
+                              ρ = a(1 + cos θ),   0 ≤ θ ≤ 2π
+  1     studiarne la regolarità,
+  2     disegnarne il sostegno,
+  3     calcolarne la lunghezza.
+
+Si ha
+|ρ(θ)|2 +|ρ′ (θ)|2 = a2 [(1+cos θ)2 +sen2 θ] = 2a2 [1+cos θ] = 0 ⇐⇒ cos θ = −1
+                                                               y
+
+
+
+
+quindi ρ(π) = ρ′ (π) = 0. Il punto corrispon-
+dente a θ = π è l’origine, dove la cardioide
+presenta una cuspide.                                                          x
+
+
+
+
+            L.Freddi                                               April 16, 2026   10 / 18
+Curve in coordinate polari
+Esercizio
+Sia a > 0. Data la curva (cardioide) di equazione polare
+                              ρ = a(1 + cos θ),   0 ≤ θ ≤ 2π
+  1     studiarne la regolarità,
+  2     disegnarne il sostegno,
+  3     calcolarne la lunghezza.
+
+Si ha
+|ρ(θ)|2 +|ρ′ (θ)|2 = a2 [(1+cos θ)2 +sen2 θ] = 2a2 [1+cos θ] = 0 ⇐⇒ cos θ = −1
+                                                               y
+
+
+
+
+quindi ρ(π) = ρ′ (π) = 0. Il punto corrispon-
+dente a θ = π è l’origine, dove la cardioide
+presenta una cuspide.                                                          x
+
+
+
+
+Notiamo che con la rappresentazione
+      ρ = a(1 + cos θ)    −π ≤θ ≤π
+
+
+            L.Freddi                                               April 16, 2026   10 / 18
+Curve in coordinate polari
+Esercizio
+Sia a > 0. Data la curva (cardioide) di equazione polare
+                              ρ = a(1 + cos θ),   0 ≤ θ ≤ 2π
+  1     studiarne la regolarità,
+  2     disegnarne il sostegno,
+  3     calcolarne la lunghezza.
+
+Si ha
+|ρ(θ)|2 +|ρ′ (θ)|2 = a2 [(1+cos θ)2 +sen2 θ] = 2a2 [1+cos θ] = 0 ⇐⇒ cos θ = −1
+                                                               y
+
+
+
+
+quindi ρ(π) = ρ′ (π) = 0. Il punto corrispon-
+dente a θ = π è l’origine, dove la cardioide
+presenta una cuspide.                                                          x
+
+
+
+
+Notiamo che con la rappresentazione
+        ρ = a(1 + cos θ)    −π ≤θ ≤π
+si ottiene una curva con il medesimo sostegno, ma regolare.
+
+            L.Freddi                                               April 16, 2026   10 / 18
+Esercizi
+
+Esercizio (per casa)
+Sia D il sottoinsieme chiuso del piano delimitato dalla spirale di equazione
+polare
+                          ρ(θ) = eθ , θ ∈ [0, 2π]
+e dal segmento congiungente i due estremi della curva.
+  1   Rappresentare graficamente l’insieme D.
+  2   Calcolare l’integrale della funzione
+                                           ρ
+                                 f (ρ) = p
+                                          1 + ρ2
+
+      sulla frontiera di D.
+
+
+
+
+         L.Freddi                                         April 16, 2026   11 / 18
+Integrali curvilinei del secondo tipo
+Definizione
+Sia φ : [a, b] → Rn , n ≥ 2, una curva C 1 a tratti e sia A un aperto di Rn
+contenente φ([a, b]). Sia F ∈ C(A; Rn ) (che rappresenta un campo vettoriale in
+fisica). Si definisce integrale (curvilineo) del campo vettoriale F lungo la curva φ
+il numero
+           Z             Z b                       Xn Z b
+                                          ′
+               F · dx :=     F (φ(t)) · φ (t) dt =        Fi (φ(t)) · φ′i (t) dt
+           φ             a                      i=1   a
+
+
+     il · indica il prodotto scalare
+
+
+
+
+         L.Freddi                                                April 16, 2026   12 / 18
+Integrali curvilinei del secondo tipo
+Definizione
+Sia φ : [a, b] → Rn , n ≥ 2, una curva C 1 a tratti e sia A un aperto di Rn
+contenente φ([a, b]). Sia F ∈ C(A; Rn ) (che rappresenta un campo vettoriale in
+fisica). Si definisce integrale (curvilineo) del campo vettoriale F lungo la curva φ
+il numero
+           Z             Z b                       Xn Z b
+                                          ′
+               F · dx :=     F (φ(t)) · φ (t) dt =        Fi (φ(t)) · φ′i (t) dt
+           φ             a                      i=1   a
+
+
+     il · indica il prodotto scalare
+     esempio notevole: F = ∇f con f ∈ C 1 (A)
+
+
+
+
+         L.Freddi                                                April 16, 2026   12 / 18
+Integrali curvilinei del secondo tipo
+Definizione
+Sia φ : [a, b] → Rn , n ≥ 2, una curva C 1 a tratti e sia A un aperto di Rn
+contenente φ([a, b]). Sia F ∈ C(A; Rn ) (che rappresenta un campo vettoriale in
+fisica). Si definisce integrale (curvilineo) del campo vettoriale F lungo la curva φ
+il numero
+           Z             Z b                       Xn Z b
+                                          ′
+               F · dx :=     F (φ(t)) · φ (t) dt =        Fi (φ(t)) · φ′i (t) dt
+           φ             a                             i=1   a
+
+
+     il · indica il prodotto scalare
+     esempio notevole: F = ∇f con f ∈ C 1 (A)
+     con n = 1 si avrebbe Z                   Z b
+                                   F · dx =         F (φ(t))φ′ (t) dt
+                               φ               a
+
+
+
+
+         L.Freddi                                                       April 16, 2026   12 / 18
+Integrali curvilinei del secondo tipo
+Definizione
+Sia φ : [a, b] → Rn , n ≥ 2, una curva C 1 a tratti e sia A un aperto di Rn
+contenente φ([a, b]). Sia F ∈ C(A; Rn ) (che rappresenta un campo vettoriale in
+fisica). Si definisce integrale (curvilineo) del campo vettoriale F lungo la curva φ
+il numero
+           Z             Z b                       Xn Z b
+                                          ′
+               F · dx :=     F (φ(t)) · φ (t) dt =        Fi (φ(t)) · φ′i (t) dt
+           φ             a                               i=1   a
+
+
+     il · indica il prodotto scalare
+     esempio notevole: F = ∇f con f ∈ C 1 (A)
+     con n = 1 si avrebbe Z                   Z b
+                                   F · dx =           F (φ(t))φ′ (t) dt
+                               φ                  a
+
+     mentre l’integrale del primo tipo era
+                             Z         Z b
+                                F ds =     F (φ(t))|φ′ (t)| dt
+                               φ              a
+         L.Freddi                                                         April 16, 2026   12 / 18
+Integrali curvilinei del secondo tipo
+
+Proprietà degli integrali curvilinei del secondo tipo:
+     vale la proprietà di linearità
+
+
+
+
+         L.Freddi                                         April 16, 2026   13 / 18
+Integrali curvilinei del secondo tipo
+
+Proprietà degli integrali curvilinei del secondo tipo:
+     vale la proprietà di linearità
+     vale la disuguaglianza del modulo
+                                 Z          Z
+                                   F · dx ≤   |F | ds
+                                        φ          φ
+
+     dove l’integrale a secondo membro è del primo tipo (si dimostra utilizzando
+     la disuguaglianza di Schwarz);
+
+
+
+
+         L.Freddi                                              April 16, 2026   13 / 18
+Integrali curvilinei del secondo tipo
+
+Proprietà degli integrali curvilinei del secondo tipo:
+     vale la proprietà di linearità
+     vale la disuguaglianza del modulo
+                                 Z          Z
+                                   F · dx ≤   |F | ds
+                                        φ          φ
+
+     dove l’integrale a secondo membro è del primo tipo (si dimostra utilizzando
+     la disuguaglianza di Schwarz);
+                   Z           Z
+     φ ∼ ψ =⇒         F · dx =   F · dx
+                     φ              ψ
+
+
+
+
+         L.Freddi                                              April 16, 2026   13 / 18
+Integrali curvilinei del secondo tipo
+
+Proprietà degli integrali curvilinei del secondo tipo:
+     vale la proprietà di linearità
+     vale la disuguaglianza del modulo
+                                 Z          Z
+                                   F · dx ≤   |F | ds
+                                        φ          φ
+
+     dove l’integrale a secondo membro è del primo tipo (si dimostra utilizzando
+     la disuguaglianza di Schwarz);
+                   Z           Z
+     φ ∼ ψ =⇒         F · dx =   F · dx
+                     φ              ψ
+
+Quindi si può definire l’integrale (curvilineo) su un cammino come integrale su
+una qualunque sua parametrizzazione
+                            Z            Z
+                               F · dx :=     F · dx, φ ∈ γ.
+                             γ              φ
+
+
+
+
+         L.Freddi                                               April 16, 2026     13 / 18
+Significato fisico
+
+Siano
+     A un aperto di R3 ,
+     F (x) = (F1 (x), F2 (x), F3 (x)) un campo di forze in A (ad esempio la
+     gravità, o un campo elettrico o magnetico) della cui azione risente un
+     particella posta in A.
+
+Il lavoro compiuto dal campo F quando la particella percorre una traiettoria φ
+dentro A è                         Z
+                                L =     F · dx
+                                        φ
+
+
+
+
+         L.Freddi                                              April 16, 2026    14 / 18
+Il cammino opposto −γ
+
+Data φ : [a, b] → Rn , definiamo
+                      ψ : [−b, −a] → Rn ,   ψ(t) := φ(−t)
+Osserviamo che
+
+
+
+
+         L.Freddi                                           April 16, 2026   15 / 18
+Il cammino opposto −γ
+
+Data φ : [a, b] → Rn , definiamo
+                      ψ : [−b, −a] → Rn ,   ψ(t) := φ(−t)
+Osserviamo che
+     il primo estremo di ψ: ψ(−b) = φ(b)
+
+
+
+
+         L.Freddi                                           April 16, 2026   15 / 18
+Il cammino opposto −γ
+
+Data φ : [a, b] → Rn , definiamo
+                      ψ : [−b, −a] → Rn ,   ψ(t) := φ(−t)
+Osserviamo che
+     il primo estremo di ψ: ψ(−b) = φ(b) secondo estremo di φ
+
+
+
+
+         L.Freddi                                           April 16, 2026   15 / 18
+Il cammino opposto −γ
+
+Data φ : [a, b] → Rn , definiamo
+                      ψ : [−b, −a] → Rn ,   ψ(t) := φ(−t)
+Osserviamo che
+     il primo estremo di ψ: ψ(−b) = φ(b) secondo estremo di φ
+     il secondo estremo di ψ: ψ(−a) = φ(a) = primo estremo di φ
+
+
+
+
+         L.Freddi                                           April 16, 2026   15 / 18
+Il cammino opposto −γ
+
+Data φ : [a, b] → Rn , definiamo
+                      ψ : [−b, −a] → Rn ,    ψ(t) := φ(−t)
+Osserviamo che
+     il primo estremo di ψ: ψ(−b) = φ(b) secondo estremo di φ
+     il secondo estremo di ψ: ψ(−a) = φ(a) = primo estremo di φ
+     φ([a, b]) = ψ([−b, −a]) cioè hanno lo stesso sostegno, che però viene
+     percorso in versi opposti
+
+
+
+
+         L.Freddi                                               April 16, 2026   15 / 18
+Il cammino opposto −γ
+
+Data φ : [a, b] → Rn , definiamo
+                      ψ : [−b, −a] → Rn ,    ψ(t) := φ(−t)
+Osserviamo che
+     il primo estremo di ψ: ψ(−b) = φ(b) secondo estremo di φ
+     il secondo estremo di ψ: ψ(−a) = φ(a) = primo estremo di φ
+     φ([a, b]) = ψ([−b, −a]) cioè hanno lo stesso sostegno, che però viene
+     percorso in versi opposti
+     in particolare ℓ(φ) = ℓ(ψ)
+
+
+
+
+         L.Freddi                                               April 16, 2026   15 / 18
+Il cammino opposto −γ
+
+Data φ : [a, b] → Rn , definiamo
+                        ψ : [−b, −a] → Rn ,   ψ(t) := φ(−t)
+Osserviamo che
+     il primo estremo di ψ: ψ(−b) = φ(b) secondo estremo di φ
+     il secondo estremo di ψ: ψ(−a) = φ(a) = primo estremo di φ
+     φ([a, b]) = ψ([−b, −a]) cioè hanno lo stesso sostegno, che però viene
+     percorso in versi opposti
+     in particolare ℓ(φ) = ℓ(ψ)
+
+Se γ = [φ], definiamo
+                                     −γ = [ψ]
+cioè il cammino parametrizzato da ψ.
+
+
+
+
+         L.Freddi                                               April 16, 2026   15 / 18
+Il cammino opposto −γ
+
+Osservazione
+Sia γ = [φ] con φ di classe C 1 a tratti. A sia un aperto contenente il sostegno di
+φ. Gli integrali del primo e secondo tipo si comportano in modo diverso rispetto
+al cammino opposto. Infatti
+     se f : A → R è continua in A, per l’integrale del primo tipo si ha
+                                    Z             Z
+                                         f ds =        f ds
+                                     γ            −γ
+
+
+     In particolare ℓ(−γ) = ℓ(γ);
+     se F : A → Rn è continua in A, per l’integrale del secondo tipo si ha
+                               Z                  Z
+                                    F · dx = −             F · dx
+                                γ                     −γ
+
+
+
+
+         L.Freddi                                                   April 16, 2026   16 / 18
+Esempi ed esercizi
+
+Esempio
+I campi magnetici generati da un filo rettilineo percorso da corrente costante sono
+del tipo
+
+
+
+
+          L.Freddi                                             April 16, 2026   17 / 18
+Esempi ed esercizi
+
+Esempio
+I campi magnetici generati da un filo rettilineo percorso da corrente costante sono
+del tipo (legge di Biot-Savart)
+
+                                       (−y, x)
+                        F (x, y) = C            ,   C > 0.
+                                       x2 + y 2
+
+
+
+
+          L.Freddi                                             April 16, 2026   17 / 18
+Esempi ed esercizi
+
+Esempio
+I campi magnetici generati da un filo rettilineo percorso da corrente costante sono
+del tipo (legge di Biot-Savart)
+
+                                        (−y, x)
+                         F (x, y) = C            ,    C > 0.
+                                        x2 + y 2
+
+Data la curva φ(t) = (cos t, sen t), t ∈ [0, 2π], si ha
+                                  Z
+                                     F · dx =
+                                    φ
+
+
+
+
+          L.Freddi                                             April 16, 2026   17 / 18
+Esempi ed esercizi
+
+Esempio
+I campi magnetici generati da un filo rettilineo percorso da corrente costante sono
+del tipo (legge di Biot-Savart)
+
+                                        (−y, x)
+                         F (x, y) = C            ,    C > 0.
+                                        x2 + y 2
+
+Data la curva φ(t) = (cos t, sen t), t ∈ [0, 2π], si ha
+                                  Z
+                                     F · dx = 2πC
+                                    φ
+
+
+
+
+          L.Freddi                                             April 16, 2026   17 / 18
+Esempi ed esercizi
+
+Esercizio (per casa)
+Calcolare l’integrale del campo vettoriale F = (F1 , F2 ) con
+                                              4x
+                             F1 (x, y) =
+                                         1 − 2x2 − y 2
+                                              2y
+                             F2 (x, y) =
+                                         1 − 2x2 − y 2
+lungo la circonferenza di centro l’origine e raggio r > 0 orientata in senso orario.
+Ripetere l’esercizio per il campo G = (G1 , G2 ) con
+
+                                   G1 (x, y) = y
+                                   G2 (x, y) = 0.
+
+
+
+
+         L.Freddi                                                April 16, 2026   18 / 18

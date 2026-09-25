@@ -1,0 +1,1268 @@
+---
+fonte: "An2_2026_pres16_campi_vettoriali.pdf"
+metodo: "testo-pdf"
+da_rivedere: false
+---
+
+Campi vettoriali
+
+                L.Freddi
+
+
+              April 22, 2026
+
+
+
+
+L.Freddi                       April 22, 2026   1 / 36
+Cammini e parametrizzazioni
+È utile ricordare che, dato un campo vettoriale F ∈ C(A; Rn )
+     abbiamo definito l’integrale di F lungo un cammino orientato γ come
+     l’integrale lungo una qualsiasi delle parametrizzazioni equivalenti di γ
+     se γ + e γ − sono due cammini con lo stesso sostegno e verso opposto, risulta
+                              Z               Z
+                                 F · dx = −       F · dx
+                                γ+              γ−
+
+
+
+
+         L.Freddi                                                April 22, 2026   2 / 36
+Differenziale di una funzione C 1
+Un esempio notevolissimo di campo vettoriale è dato dal gradiente
+                                 F (x) = ∇f (x)
+di una funzione f ∈ C (A), con A aperto di Rn .
+                      1
+
+
+
+
+         L.Freddi                                             April 22, 2026   3 / 36
+Differenziale di una funzione C 1
+Un esempio notevolissimo di campo vettoriale è dato dal gradiente
+                                 F (x) = ∇f (x)
+di una funzione f ∈ C (A), con A aperto di Rn .
+                      1
+
+     i campi di questo tipo sono detti conservativi
+
+
+
+
+         L.Freddi                                             April 22, 2026   3 / 36
+Differenziale di una funzione C 1
+Un esempio notevolissimo di campo vettoriale è dato dal gradiente
+                                  F (x) = ∇f (x)
+di una funzione f ∈ C (A), con A aperto di Rn .
+                      1
+
+     i campi di questo tipo sono detti conservativi
+     data una curva φ : [a, b] → A, C 1 a tratti, si ha
+                     Z                     Z b
+                         ∇f (x) · dx =         ∇f (φ(t)) · φ′ (t) dt
+                       φ                     a
+                                            Z b
+                                                          ′
+                                       =           f (φ(t)) dt
+                                             a
+
+
+
+
+         L.Freddi                                                April 22, 2026   3 / 36
+Differenziale di una funzione C 1
+Un esempio notevolissimo di campo vettoriale è dato dal gradiente
+                                  F (x) = ∇f (x)
+di una funzione f ∈ C (A), con A aperto di Rn .
+                      1
+
+     i campi di questo tipo sono detti conservativi
+     data una curva φ : [a, b] → A, C 1 a tratti, si ha
+                     Z                     Z b
+                         ∇f (x) · dx =         ∇f (φ(t)) · φ′ (t) dt
+                       φ                     a
+                                            Z b
+                                                          ′
+                                       =           f (φ(t)) dt
+                                             a
+
+                                       =    f (φ(b)) − f (φ(a)).
+     Quindi: l’integrale di un campo conservativo lungo una curva dipende solo
+     dagli estremi (non dal cammino percorso tra di essi).
+
+
+
+
+         L.Freddi                                                  April 22, 2026   3 / 36
+Campi conservativi
+Definizione
+Sia A un aperto di Rn . Un campo vettoriale F ∈ C(A; Rn ) si dice conservativo
+se esiste una funzione f ∈ C 1 (A) tale che F = ∇f . In tal caso f è detta una
+primitiva o un potenziale del campo vettoriale F .
+
+
+
+
+         L.Freddi                                             April 22, 2026   4 / 36
+Campi conservativi
+Definizione
+Sia A un aperto di Rn . Un campo vettoriale F ∈ C(A; Rn ) si dice conservativo
+se esiste una funzione f ∈ C 1 (A) tale che F = ∇f . In tal caso f è detta una
+primitiva o un potenziale del campo vettoriale F .
+
+
+Avvertenza: il potenziale elettrostatico V è un potenziale del campo elettrico E
+in regime elettrostatico a meno del segno, in quanto si ha E = −∇V .
+
+
+
+
+         L.Freddi                                               April 22, 2026   4 / 36
+Campi conservativi
+Definizione
+Sia A un aperto di Rn . Un campo vettoriale F ∈ C(A; Rn ) si dice conservativo
+se esiste una funzione f ∈ C 1 (A) tale che F = ∇f . In tal caso f è detta una
+primitiva o un potenziale del campo vettoriale F .
+
+
+Avvertenza: il potenziale elettrostatico V è un potenziale del campo elettrico E
+in regime elettrostatico a meno del segno, in quanto si ha E = −∇V .
+
+Notiamo anche che, come visto nella slide precedente, il lavoro compiuto da un
+campo conservativo per andare da φ(a) a φ(b) lungo una curva φ C 1 di classe a
+tratti risulta uguale alla differenza di potenziale tra i due punti, infatti
+                 Z                Z
+                    F (x) · dx =     ∇f (x) · dx = f (φ(b)) − f (φ(a))
+                    φ           φ
+
+
+
+
+         L.Freddi                                               April 22, 2026   4 / 36
+Campi conservativi
+Teorema (di caratterizzazione dei campi conservativi)
+Sia A un aperto connesso di Rn e F ∈ C(A; Rn ). Sono equivalenti:
+  1   F è conservativo in A;
+  2   per ogni curva φ chiusa, C 1 a tratti e con sostegno in A, risulta
+                                     Z
+                                         F · dx = 0;
+                                       φ
+
+  3   per ogni coppia di curve C 1 a tratti φ1 e φ2 con sostegno in A, aventi gli
+      stessi estremi e lo stesso verso, si ha
+                                  Z            Z
+                                      F · dx =    F · dx.
+                                  φ1            φ2
+
+
+
+
+          L.Freddi                                               April 22, 2026     5 / 36
+Campi conservativi
+Sia A un aperto di Rn e
+    F (x) = (F1 (x), ..., Fn (x)) un campo vettoriale di classe C 1 (A) conservativo,
+
+
+
+
+        L.Freddi                                                 April 22, 2026   6 / 36
+Campi conservativi
+Sia A un aperto di Rn e
+    F (x) = (F1 (x), ..., Fn (x)) un campo vettoriale di classe C 1 (A) conservativo,
+    sia f un suo potenziale, cioè
+                                             ∂f
+                   f ∈ C 2 (A) e Fi (x) =        (x) i = 1, 2, . . . , n
+                                             ∂xi
+
+
+
+
+        L.Freddi                                                   April 22, 2026   6 / 36
+Campi conservativi
+Sia A un aperto di Rn e
+    F (x) = (F1 (x), ..., Fn (x)) un campo vettoriale di classe C 1 (A) conservativo,
+    sia f un suo potenziale, cioè
+                                             ∂f
+                   f ∈ C 2 (A) e Fi (x) =        (x) i = 1, 2, . . . , n
+                                             ∂xi
+    derivando rispetto ad xj
+
+                          ∂Fi    ∂2f
+                              =
+                          ∂xj   ∂xj ∂xi
+
+
+
+
+        L.Freddi                                                   April 22, 2026   6 / 36
+Campi conservativi
+Sia A un aperto di Rn e
+    F (x) = (F1 (x), ..., Fn (x)) un campo vettoriale di classe C 1 (A) conservativo,
+    sia f un suo potenziale, cioè
+                                             ∂f
+                   f ∈ C 2 (A) e Fi (x) =        (x) i = 1, 2, . . . , n
+                                             ∂xi
+    derivando rispetto ad xj e applicando il teorema di Schwarz sull’inversione
+    dell’ordine di derivazione si ottiene
+                           ∂Fi       ∂2f       ∂2f
+                                =          =
+                           ∂xj     ∂xj ∂xi   ∂xi ∂xj
+
+
+
+
+        L.Freddi                                                   April 22, 2026   6 / 36
+Campi conservativi
+Sia A un aperto di Rn e
+    F (x) = (F1 (x), ..., Fn (x)) un campo vettoriale di classe C 1 (A) conservativo,
+    sia f un suo potenziale, cioè
+                                             ∂f
+                   f ∈ C 2 (A) e Fi (x) =        (x) i = 1, 2, . . . , n
+                                             ∂xi
+    derivando rispetto ad xj e applicando il teorema di Schwarz sull’inversione
+    dell’ordine di derivazione si ottiene
+                           ∂Fi       ∂2f       ∂2f     ∂Fj
+                                =          =         =
+                           ∂xj     ∂xj ∂xi   ∂xi ∂xj    ∂xi
+
+
+
+
+        L.Freddi                                                   April 22, 2026   6 / 36
+Campi conservativi
+Sia A un aperto di Rn e
+     F (x) = (F1 (x), ..., Fn (x)) un campo vettoriale di classe C 1 (A) conservativo,
+     sia f un suo potenziale, cioè
+                                              ∂f
+                    f ∈ C 2 (A) e Fi (x) =        (x) i = 1, 2, . . . , n
+                                              ∂xi
+     derivando rispetto ad xj e applicando il teorema di Schwarz sull’inversione
+     dell’ordine di derivazione si ottiene
+                            ∂Fi       ∂2f       ∂2f     ∂Fj
+                                 =          =         =
+                            ∂xj     ∂xj ∂xi   ∂xi ∂xj    ∂xi
+
+Osservazione
+L’uguaglianza
+                          ∂Fi   ∂Fj
+                              =     , i, j = 1, 2, . . . , n
+                          ∂xj   ∂xi
+è condizione necessaria affinché F ∈ C 1 sia conservativo.
+
+
+         L.Freddi                                                   April 22, 2026   6 / 36
+Campi conservativi
+Sia A un aperto di Rn e
+     F (x) = (F1 (x), ..., Fn (x)) un campo vettoriale di classe C 1 (A) conservativo,
+     sia f un suo potenziale, cioè
+                                              ∂f
+                    f ∈ C 2 (A) e Fi (x) =        (x) i = 1, 2, . . . , n
+                                              ∂xi
+     derivando rispetto ad xj e applicando il teorema di Schwarz sull’inversione
+     dell’ordine di derivazione si ottiene
+                            ∂Fi       ∂2f       ∂2f     ∂Fj
+                                 =          =         =
+                            ∂xj     ∂xj ∂xi   ∂xi ∂xj    ∂xi
+
+Osservazione
+L’uguaglianza
+                          ∂Fi   ∂Fj
+                              =     , i, j = 1, 2, . . . , n
+                          ∂xj   ∂xi
+è condizione necessaria affinché F ∈ C 1 sia conservativo.
+Diamo perciò la seguente definizione.
+         L.Freddi                                                   April 22, 2026   6 / 36
+Campi irrotazionali
+Definizione
+Un campo vettoriale F ∈ C 1 (A; Rn ) si dice irrotazionale se
+
+                         ∂Fi   ∂Fj
+                             =     ∀ i, j = 1, 2, . . . , n.
+                         ∂xj   ∂xi
+
+
+
+
+         L.Freddi                                               April 22, 2026   7 / 36
+Campi irrotazionali
+Definizione
+Un campo vettoriale F ∈ C 1 (A; Rn ) si dice irrotazionale se
+
+                         ∂Fi   ∂Fj
+                             =     ∀ i, j = 1, 2, . . . , n.
+                         ∂xj   ∂xi
+
+Per l’osservazione precedente, se F ∈ C 1 ,
+     conservativo =⇒ irrotazionale
+
+
+
+
+         L.Freddi                                               April 22, 2026   7 / 36
+Campi irrotazionali
+Definizione
+Un campo vettoriale F ∈ C 1 (A; Rn ) si dice irrotazionale se
+
+                         ∂Fi   ∂Fj
+                             =     ∀ i, j = 1, 2, . . . , n.
+                         ∂xj   ∂xi
+
+Per l’osservazione precedente, se F ∈ C 1 ,
+     conservativo =⇒ irrotazionale
+
+Esempio (                                                )
+Il campo (di Biot-Savart)
+                                           y        x 
+                        B(x, y) = −             ,
+                                        x2 + y 2 x2 + y 2
+
+
+
+
+         L.Freddi                                               April 22, 2026   7 / 36
+Campi irrotazionali
+Definizione
+Un campo vettoriale F ∈ C 1 (A; Rn ) si dice irrotazionale se
+
+                           ∂Fi   ∂Fj
+                               =     ∀ i, j = 1, 2, . . . , n.
+                           ∂xj   ∂xi
+
+Per l’osservazione precedente, se F ∈ C 1 ,
+     conservativo =⇒ irrotazionale
+
+Esempio (                                                  )
+Il campo (di Biot-Savart)
+                                             y        x 
+                          B(x, y) = −             ,
+                                          x2 + y 2 x2 + y 2
+     è di classe C 1 (R2 \ {(0, 0)}),
+
+
+
+
+         L.Freddi                                                April 22, 2026   7 / 36
+Campi irrotazionali
+Definizione
+Un campo vettoriale F ∈ C 1 (A; Rn ) si dice irrotazionale se
+
+                           ∂Fi   ∂Fj
+                               =     ∀ i, j = 1, 2, . . . , n.
+                           ∂xj   ∂xi
+
+Per l’osservazione precedente, se F ∈ C 1 ,
+     conservativo =⇒ irrotazionale
+
+Esempio (                                                  )
+Il campo (di Biot-Savart)
+                                             y        x 
+                          B(x, y) = −             ,
+                                          x2 + y 2 x2 + y 2
+     è di classe C 1 (R2 \ {(0, 0)}),
+     è irrotazionale
+
+
+         L.Freddi                                                April 22, 2026   7 / 36
+Campi irrotazionali
+Definizione
+Un campo vettoriale F ∈ C 1 (A; Rn ) si dice irrotazionale se
+
+                           ∂Fi   ∂Fj
+                               =     ∀ i, j = 1, 2, . . . , n.
+                           ∂xj   ∂xi
+
+Per l’osservazione precedente, se F ∈ C 1 ,
+     conservativo =⇒ irrotazionale
+
+Esempio (                                                  )
+Il campo (di Biot-Savart)
+                                             y        x 
+                           B(x, y) = −            ,
+                                          x2 + y 2 x2 + y 2
+     è di classe C 1 (R2 \ {(0, 0)}),
+     è irrotazionale
+     non è conservativo
+         L.Freddi                                                April 22, 2026   7 / 36
+Campi irrotazionali
+Definizione
+Un campo vettoriale F ∈ C 1 (A; Rn ) si dice irrotazionale se
+
+                           ∂Fi   ∂Fj
+                               =     ∀ i, j = 1, 2, . . . , n.
+                           ∂xj   ∂xi
+
+Per l’osservazione precedente, se F ∈ C 1 ,
+     conservativo =⇒ irrotazionale
+
+Esempio (di campo irrotazionale non conservativo)
+Il campo (di Biot-Savart)
+                                             y        x 
+                           B(x, y) = −            ,
+                                          x2 + y 2 x2 + y 2
+     è di classe C 1 (R2 \ {(0, 0)}),
+     è irrotazionale
+     non è conservativo
+         L.Freddi                                                April 22, 2026   7 / 36
+Campo irrotazionale non conservativo
+Infatti, come si verifica facilmente per esercizio, considerata la circonferenza
+                              
+                                x(t) = cos t
+                          γ:                  , 0 ≤ t ≤ 2π,
+                                y(t) = sen t
+si ha                           Z
+                                     B · dx = 2π ̸= 0.
+                                 γ
+
+
+
+
+         L.Freddi                                                 April 22, 2026   8 / 36
+Campo irrotazionale non conservativo
+Infatti, come si verifica facilmente per esercizio, considerata la circonferenza
+                              
+                                x(t) = cos t
+                          γ:                  , 0 ≤ t ≤ 2π,
+                                y(t) = sen t
+si ha                           Z
+                                     B · dx = 2π ̸= 0.
+                                 γ
+Per esercizio proviamo comunque a cercarne un potenziale,
+
+
+
+
+         L.Freddi                                                 April 22, 2026   8 / 36
+Campo irrotazionale non conservativo
+Infatti, come si verifica facilmente per esercizio, considerata la circonferenza
+                              
+                                x(t) = cos t
+                          γ:                  , 0 ≤ t ≤ 2π,
+                                y(t) = sen t
+si ha                           Z
+                                     B · dx = 2π ̸= 0.
+                                 γ
+ Per esercizio proviamo comunque a cercarne un potenziale, cioè una funzione
+f = f (x, y) tale che         (
+                                ∂f        y
+                                ∂x = − x2 +y 2
+                                ∂f      x
+                                                                              (1)
+                                ∂y = x2 +y 2
+
+
+
+
+         L.Freddi                                                 April 22, 2026   8 / 36
+Campo irrotazionale non conservativo
+Infatti, come si verifica facilmente per esercizio, considerata la circonferenza
+                              
+                                x(t) = cos t
+                          γ:                  , 0 ≤ t ≤ 2π,
+                                y(t) = sen t
+si ha                           Z
+                                     B · dx = 2π ̸= 0.
+                                 γ
+ Per esercizio proviamo comunque a cercarne un potenziale, cioè una funzione
+f = f (x, y) tale che         (
+                                ∂f        y
+                                ∂x = − x2 +y 2
+                                ∂f      x
+                                                                              (1)
+                                ∂y = x2 +y 2
+Integrando la seconda rispetto ad y si trova che
+                                             y
+                          f (x, y) = arctan + φ(x)
+                                             x
+
+
+
+
+         L.Freddi                                                 April 22, 2026   8 / 36
+Campo irrotazionale non conservativo
+Infatti, come si verifica facilmente per esercizio, considerata la circonferenza
+                              
+                                x(t) = cos t
+                          γ:                  , 0 ≤ t ≤ 2π,
+                                y(t) = sen t
+si ha                           Z
+                                     B · dx = 2π ̸= 0.
+                                 γ
+ Per esercizio proviamo comunque a cercarne un potenziale, cioè una funzione
+f = f (x, y) tale che         (
+                                ∂f        y
+                                ∂x = − x2 +y 2
+                                ∂f      x
+                                                                              (1)
+                                ∂y = x2 +y 2
+Integrando la seconda rispetto ad y si trova che
+                                             y
+                          f (x, y) = arctan + φ(x)
+                                             x
+Derivando quest’ultima rispetto ad x si ha
+                            ∂f          y
+                                =− 2         + φ′ (x)
+                            ∂x      x + y2
+
+         L.Freddi                                                 April 22, 2026   8 / 36
+Campo irrotazionale non conservativo
+Infatti, come si verifica facilmente per esercizio, considerata la circonferenza
+                              
+                                x(t) = cos t
+                          γ:                  , 0 ≤ t ≤ 2π,
+                                y(t) = sen t
+si ha                           Z
+                                     B · dx = 2π ̸= 0.
+                                 γ
+ Per esercizio proviamo comunque a cercarne un potenziale, cioè una funzione
+f = f (x, y) tale che         (
+                                ∂f        y
+                                ∂x = − x2 +y 2
+                                ∂f      x
+                                                                              (1)
+                                ∂y = x2 +y 2
+Integrando la seconda rispetto ad y si trova che
+                                             y
+                          f (x, y) = arctan + φ(x)
+                                             x
+Derivando quest’ultima rispetto ad x si ha
+                            ∂f          y
+                                =− 2         + φ′ (x)
+                            ∂x      x + y2
+quindi le (1) sono soddisfatte prendendo φ = 0
+         L.Freddi                                                 April 22, 2026   8 / 36
+Campo irrotazionale non conservativo
+Quindi
+    derivando si verifica che un potenziale è dato da
+                                                    y
+                                  f (x, y) = arctan
+                                                    x
+
+
+
+
+         L.Freddi                                        April 22, 2026   9 / 36
+Campo irrotazionale non conservativo
+Quindi
+    derivando si verifica che un potenziale è dato da
+                                                    y
+                                  f (x, y) = arctan
+                                                    x
+    perciò B è conservativo sull’aperto R2 \ {(x, y) : x = 0}
+
+
+
+
+         L.Freddi                                             April 22, 2026   9 / 36
+Campo irrotazionale non conservativo
+Quindi
+    derivando si verifica che un potenziale è dato da
+                                                    y
+                                  f (x, y) = arctan
+                                                    x
+    perciò B è conservativo sull’aperto R2 \ {(x, y) : x = 0}
+    non lo è su R2 \ {(0, 0)}
+
+
+
+
+         L.Freddi                                             April 22, 2026   9 / 36
+Campi irrotazionali e rotore
+Nel caso n = 3
+
+
+
+
+        L.Freddi               April 22, 2026   10 / 36
+Campi irrotazionali e rotore
+Nel caso n = 3
+    le condizioni di irrotazionalità sono
+               ∂F3      ∂F2           ∂F1    ∂F3        ∂F2   ∂F1
+                    −        = 0,          −     = 0,       −     =0
+               ∂x2      ∂x3           ∂x3    ∂x1        ∂x1   ∂x2
+
+
+
+
+        L.Freddi                                             April 22, 2026   10 / 36
+Campi irrotazionali e rotore
+Nel caso n = 3
+    le condizioni di irrotazionalità sono
+               ∂F3      ∂F2           ∂F1    ∂F3        ∂F2   ∂F1
+                    −        = 0,          −     = 0,       −     =0
+               ∂x2      ∂x3           ∂x3    ∂x1        ∂x1   ∂x2
+    il campo che ha come componenti i primi membri di queste uguaglianze
+    viene detto rotore di F e si indica con uno dei simboli rot oppure ∇×. Si
+    pone cioè
+                             ∂F3      ∂F2 ∂F1     ∂F3 ∂F2       ∂F1 
+                 ∇ × F :=          −      ,    −       ,     −
+                             ∂x2      ∂x3 ∂x3     ∂x1 ∂x1       ∂x2
+
+
+
+
+        L.Freddi                                             April 22, 2026   10 / 36
+Campi irrotazionali e rotore
+Nel caso n = 3
+    le condizioni di irrotazionalità sono
+               ∂F3      ∂F2           ∂F1    ∂F3        ∂F2   ∂F1
+                    −        = 0,          −     = 0,       −     =0
+               ∂x2      ∂x3           ∂x3    ∂x1        ∂x1   ∂x2
+    il campo che ha come componenti i primi membri di queste uguaglianze
+    viene detto rotore di F e si indica con uno dei simboli rot oppure ∇×. Si
+    pone cioè
+                             ∂F3      ∂F2 ∂F1     ∂F3 ∂F2       ∂F1 
+                 ∇ × F :=          −      ,    −       ,     −
+                             ∂x2      ∂x3 ∂x3     ∂x1 ∂x1       ∂x2
+    in base alla definizione, F è irrotazionale ⇐⇒ ∇ × F = 0
+
+
+
+
+        L.Freddi                                             April 22, 2026   10 / 36
+Campi irrotazionali e rotore
+Nel caso n = 3
+    le condizioni di irrotazionalità sono
+               ∂F3      ∂F2           ∂F1    ∂F3        ∂F2   ∂F1
+                    −        = 0,          −     = 0,       −     =0
+               ∂x2      ∂x3           ∂x3    ∂x1        ∂x1   ∂x2
+    il campo che ha come componenti i primi membri di queste uguaglianze
+    viene detto rotore di F e si indica con uno dei simboli rot oppure ∇×. Si
+    pone cioè
+                             ∂F3      ∂F2 ∂F1     ∂F3 ∂F2       ∂F1 
+                 ∇ × F :=          −      ,    −       ,     −
+                             ∂x2      ∂x3 ∂x3     ∂x1 ∂x1       ∂x2
+    in base alla definizione, F è irrotazionale ⇐⇒ ∇ × F = 0
+    il rotore di F si può anche ottenere sviluppando secondo la prima riga il
+    determinante simbolico
+                                                     
+                                       e1     e2   e3
+                                       ∂      ∂    ∂ 
+                                det  ∂x 1   ∂x2  ∂x3
+                                      F1     F2    F3
+    dove {e1 , e2 , e3 } è la base canonica di R3 .
+        L.Freddi                                               April 22, 2026    10 / 36
+Irrotazionalità dei campi conservativi
+Per quanto precedentemente osservato, vale il seguente teorema.
+Teorema
+F ∈ C 1 (A; Rn ) conservativo =⇒ irrotazionale (∇ × F = 0 nel caso n = 3)
+
+
+
+
+        L.Freddi                                             April 22, 2026   11 / 36
+Irrotazionalità dei campi conservativi
+Per quanto precedentemente osservato, vale il seguente teorema.
+Teorema
+F ∈ C 1 (A; Rn ) conservativo =⇒ irrotazionale (∇ × F = 0 nel caso n = 3)
+
+     abbiamo visto che la condizione di irrotazionalità non è sufficiente (in
+     generale)
+
+
+
+
+         L.Freddi                                                 April 22, 2026   11 / 36
+Irrotazionalità dei campi conservativi
+Per quanto precedentemente osservato, vale il seguente teorema.
+Teorema
+F ∈ C 1 (A; Rn ) conservativo =⇒ irrotazionale (∇ × F = 0 nel caso n = 3)
+
+     abbiamo visto che la condizione di irrotazionalità non è sufficiente (in
+     generale)
+     diventa però sufficiente se il dominio non ha buchi tali da impedire alle curve
+     di potersi deformare con continuità fino a ridursi ad un punto
+
+
+
+
+         L.Freddi                                                 April 22, 2026   11 / 36
+Irrotazionalità dei campi conservativi
+Per quanto precedentemente osservato, vale il seguente teorema.
+Teorema
+F ∈ C 1 (A; Rn ) conservativo =⇒ irrotazionale (∇ × F = 0 nel caso n = 3)
+
+     abbiamo visto che la condizione di irrotazionalità non è sufficiente (in
+     generale)
+     diventa però sufficiente se il dominio non ha buchi tali da impedire alle curve
+     di potersi deformare con continuità fino a ridursi ad un punto
+     per dare una definizione rigorosa occorre introdurre il concetto di omotopia,
+     ovvero di deformazione continua di una curva in un’altra.
+
+
+
+
+         L.Freddi                                                 April 22, 2026   11 / 36
+Omotopia
+Consideriamo qui curve definite sull’intervallo [0, 1]. È chiaro che ci si può sempre
+ricondurre a questo caso con un opportuno cambiamento di parametro.
+Definizione
+Due curve chiuse φ, ψ : [0, 1] → A si dicono omotope (e si scrive φ ∼h ψ) se
+esiste un’applicazione continua detta omotopia
+        G : [0, 1] × [0, 1] → A                            A
+                                                                    y
+                 (t, s)     7 → G(t, s)
+tale che                                                                     G(.,s)
+
+                                                                        f
+       G(t, 0) = φ(t) ∀ t ∈ [0, 1]
+
+       G(t, 1) = ψ(t)    ∀ t ∈ [0, 1]
+
+       G(0, s) = G(1, s) ∀ s ∈ [0, 1].
+
+Fisicamente, due curve sono omotope se possono essere deformate con continuità
+fino a sovrapporle senza uscire dal dominio.
+
+           L.Freddi                                                April 22, 2026     12 / 36
+Lemma di Poincaré
+Definizione
+Un aperto connesso A di Rn è detto semplicemente connesso se ogni curva chiusa
+φ : [0, 1] → A è omotopa ad una (curva) costante
+
+
+
+
+        L.Freddi                                            April 22, 2026   13 / 36
+Lemma di Poincaré
+Definizione
+Un aperto connesso A di Rn è detto semplicemente connesso se ogni curva chiusa
+φ : [0, 1] → A è omotopa ad una (curva) costante (cioè si può deformare con
+continuità fino a ridursi ad un punto di A senza uscire da A).
+
+
+
+
+        L.Freddi                                            April 22, 2026   13 / 36
+Lemma di Poincaré
+Definizione
+Un aperto connesso A di Rn è detto semplicemente connesso se ogni curva chiusa
+φ : [0, 1] → A è omotopa ad una (curva) costante (cioè si può deformare con
+continuità fino a ridursi ad un punto di A senza uscire da A).
+
+Se A è semplicemente connesso allora è connesso, ma non vale il viceversa, come
+mostrano i seguenti esempi.
+
+
+
+
+         L.Freddi                                             April 22, 2026   13 / 36
+Lemma di Poincaré
+Definizione
+Un aperto connesso A di Rn è detto semplicemente connesso se ogni curva chiusa
+φ : [0, 1] → A è omotopa ad una (curva) costante (cioè si può deformare con
+continuità fino a ridursi ad un punto di A senza uscire da A).
+
+Se A è semplicemente connesso allora è connesso, ma non vale il viceversa, come
+mostrano i seguenti esempi.
+Esempio
+     R2 \ {(0, 0)} è connesso ma non è semplicemente connesso
+     R3 \ {(0, 0, 0)} è semplicemente connesso
+     una corona circolare in R2 è connessa ma non è semplicemente connessa
+     una corona sferica in R3 è semplicemente connessa
+
+
+
+
+          L.Freddi                                            April 22, 2026   13 / 36
+Lemma di Poincaré
+Teorema (Lemma di Poincaré)
+Sia A un aperto semplicemente connesso di Rn e F ∈ C 1 (A; Rn ). Allora
+
+                   F è conservativo   ⇐⇒ F è irrotazionale
+
+
+
+
+        L.Freddi                                               April 22, 2026   14 / 36
+Dimostrazione del Lemma di Poincaré
+La dimostrazione del Lemma di Poincaré la daremo nel caso, più semplice in cui
+A è stellato.
+Definizione
+Un aperto A di Rn si dice stellato rispetto ad un suo punto x0 se per ogni x ∈ A
+il segmento di estremi x0 ed x è tutto contenuto in A.
+
+Si vede facilmente che
+     se A è convesso allora è stellato rispetto ad ogni punto
+     se A è stellato allora è semplicemente connesso
+
+
+
+
+         L.Freddi                                                 April 22, 2026   15 / 36
+Dimostrazione del Lemma di Poincaré
+La dimostrazione del Lemma di Poincaré la daremo nel caso, più semplice in cui
+A è stellato.
+Definizione
+Un aperto A di Rn si dice stellato rispetto ad un suo punto x0 se per ogni x ∈ A
+il segmento di estremi x0 ed x è tutto contenuto in A.
+
+Si vede facilmente che
+     se A è convesso allora è stellato rispetto ad ogni punto
+     se A è stellato allora è semplicemente connesso
+Dimostreremo quindi il seguente caso particolare del Lemma di Poincaré
+Teorema
+Sia A un aperto di Rn stellato rispetto ad un suo punto x0 e sia F ∈ C 1 (A; Rn ).
+Allora
+                   F è conservativo ⇐⇒ F è irrotazionale
+
+
+
+         L.Freddi                                                 April 22, 2026   15 / 36
+Dimostrazione nel caso degli aperti stellati
+Dimostrazione ( =⇒ ) Per definizione di insieme stellato, per ogni x ∈ A il
+segmento
+                  φx (t) = x0 + t(x − x0 ), t ∈ [0, 1]
+è tutto contenuto in A. Poniamo per definizione
+                                        Z
+                               f (x) :=     F · dy
+                                          φx
+
+e dimostriamo che ∇f = F , cioè che
+                  ∂f
+                      (x) = Fh (x), ∀ x ∈ A, ∀ h = 1, . . . , n.
+                  ∂xh
+
+
+
+
+         L.Freddi                                                  April 22, 2026   16 / 36
+Dimostrazione nel caso degli aperti stellati
+Per definizione di integrale di un campo vettoriale lungo una curva e derivando
+sotto il segno di integrale
+                   Z                    Z
+  ∂f           ∂                    ∂
+      (x) =             F · dy =             F (φx (t)) · φ′x (t)dt
+  ∂xh         ∂xh φx               ∂xh φx
+                   Z 1X  n
+               ∂
+           =                Fi (φx (t))φxi (t)′ dt =
+              ∂xh 0 i=1
+                   Z 1X  n
+               ∂
+           =                Fi (x0 + t(x − x0 ))(xi − x0i ) dt
+              ∂xh 0 i=1
+             Z 1X  n
+                        ∂                                     
+           =                Fi (x0 + t(x − x0 ))(xi − x0i ) dt
+               0       ∂xh
+             Z 1 i=1 n
+                  X    ∂Fi                                                      
+           =                 (x0 + t(x − x0 ))t(xi − x0i ) + Fh (x0 + t(x − x0 )) dt.
+               0    i=1
+                        ∂xh
+Poiché F è irrotazionale si ha
+                                    ∂Fi     ∂Fh
+                                         =
+                                    ∂xh     ∂xi
+e quindi la funzione integranda nell’ultimo integrale diventa
+         L.Freddi                                                 April 22, 2026   17 / 36
+Aperti stellati
+         n
+         X ∂Fh
+                      (x0 + t(x − x0 ))t(xi − x0i ) + Fh (x0 + t(x − x0 )) =
+          i=1
+                ∂xi
+                              ∂
+                           =t     Fh (x0 + t(x − x0 ))] + Fh (x0 + t(x − x0 ))
+                              ∂t
+                           = tG′ (t) + G(t)
+avendo posto G(t) = Fh (x0 + t(x − x0 )). Si ha dunque
+               Z 1                       Z 1
+      ∂f            ′                       d      
+         (x) =      tG (t) + G(t) dt =           tG(t) dt = G(1) = Fh (x)
+     ∂xh         0                        0 dt
+come volevasi dimostrare.
+Osservazione
+Abbiamo glissato sul fatto di poter derivare sotto il segno di integrale, ma si
+potrebbe dimostrare che è lecito farlo nelle ipotesi indicate. Tecnicamente, la
+derivata è un limite, quindi lo scambio della derivata con l’integrale si riconduce al
+problema di scambiare il limite con l’integrale, al quale possiamo applicare un
+teorema noto.
+
+         L.Freddi                                                   April 22, 2026   18 / 36
+Derivazione sotto il segno di integrale
+Teorema (Derivazione sotto il segno di integrale)
+Siano A un aperto di Rn e f ∈ C 1 ([a, b] × A). Allora
+                Z b                Z b
+             ∂                          ∂
+                     f (t, x) dt =          f (t, x) dt,     h = 1, ..., n.
+            ∂xh a                   a  ∂x h
+
+Dimostrazione Non è restrittivo limitarsi al caso n = 1. Poichè A è aperto,
+fissato x esiste δ > 0 tale che Bδ (x) ⊂ A. Per definizione di derivata e il teorema
+sul limite di funzioni mendiante le successioni, se la derivata a primo membro
+esiste, allora per ogni successione δ > εn → 0+ si ha
+                   Z b                   Rb                          
+                ∂                         a
+                                            f (t, x + εn ) − f (t, x) dt
+                       f (t, x) dt = lim                                 .
+               ∂x a                 n→∞                εn
+Per x fissato ed ogni t ∈ [a, b], a secondo membro possiamo applicare il teorema
+del valor medio di Lagrange alla funzione [x, x + εn ] ∋ y 7→ f (t, y), ottenendo
+                Rb                                    Z b
+                 a
+                    f (t, x + εn ) − f (t, x) dt            ∂f
+           lim                                   = lim         (t, ξn (t)) dt
+          n→∞                  εn                 n→∞ a ∂x
+
+dove ξn (t) ∈ [x, x + εn ] per ogni t. Il problema è cosı̀ ricondotto al passaggio al
+limite sotto il segno di integrale.
+         L.Freddi                                                   April 22, 2026   19 / 36
+Derivazione sotto il segno di integrale
+Ricordando che ξn (t) ∈ [x, x + εn ] per ogni t, osserviamo che εn → 0+ =⇒
+ξn (t) → x per ogni t. Per la continuità delle derivate si ha allora
+                                  ∂f             ∂f
+                            lim        (t, ξn (t)) =(t, x)
+                           n→∞ ∂x                ∂x
+puntualmente per ogni t ∈ [a, b]. Mostriamo che la convergenza è anche
+uniforme, autorizzandoci a passare al limite sotto il segno di integrale. Infatti,
+sempre utilizzando la continuità, si ha
+                 ∂f               ∂f          ∂f                   ∂f
+          sup       (t, ξn (t)) −    (t, x) =    (tn , ξn (tn )) −    (tn , x)
+         t∈[a,b] ∂x               ∂x          ∂x                   ∂x
+per opportuni punti di massimo tn ∈ [a, b]. Essendo di classe C 1 , f è lischitziana
+su ogni compatto K ⊂ [a, b] × A. D’altra parte,
+(tn , ξn (tn )) ∈ K := [a, b] × Bδ (x).Quindi, usando la lischitzianità su K si ha che
+esiste L > 0 tale che
+                   ∂f                   ∂f
+                      (tn , ξn (tn )) −    (tn , x) ≤ L|ξn (tn ) − x| → 0.
+                   ∂x                   ∂x
+Quindi la convergenza è uniforme. Passando al limite sotto il segno di integrale si
+ottiene la tesi.
+         L.Freddi                                                  April 22, 2026    20 / 36
+Esercizi
+Nella risoluzione degli esercizi sono talvolta utili le seguenti osservazioni.
+Osservazione
+Sia A un aperto di R2 e F ∈ C 1 (A; R2 ) irrotazionale. Se γ è una curva chiusa,
+C 1 a tratti che racchiude un aperto B semplicemente connesso di A, allora
+                                  Z
+                                     F · dx = 0.
+                                     γ
+
+
+
+
+         L.Freddi                                                  April 22, 2026   21 / 36
+Esercizi
+Nella risoluzione degli esercizi sono talvolta utili le seguenti osservazioni.
+Osservazione
+Sia A un aperto di R2 e F ∈ C 1 (A; R2 ) irrotazionale. Se γ è una curva chiusa,
+C 1 a tratti che racchiude un aperto B semplicemente connesso di A, allora
+                                  Z
+                                     F · dx = 0.
+                                     γ
+
+Segue dal fatto che F è conservativo in B.
+
+
+
+
+         L.Freddi                                                  April 22, 2026   21 / 36
+Esercizi
+
+Osservazione
+                                              A
+Sia A un aperto di R2 e F ∈ C 1 (A; R2 )          g2                f
+irrotazionale. Se γ1 e γ2 sono curve chiuse
+                                                       g1
+C 1 a tratti con sostegno contenuto in A,
+orientate come in figura e omotope, allora
+            Z            Z
+                F · dx =     F · dx.
+             γ1          γ2
+
+
+
+
+         L.Freddi                                      April 22, 2026   22 / 36
+Esercizi
+
+Osservazione
+                                                          A
+Sia A un aperto di R2 e F ∈ C 1 (A; R2 )                      g2                f
+irrotazionale. Se γ1 e γ2 sono curve chiuse
+                                                                   g1
+C 1 a tratti con sostegno contenuto in A,
+orientate come in figura e omotope, allora
+            Z            Z
+                F · dx =     F · dx.
+             γ1          γ2
+
+
+Infatti grazie all’omotopia esiste un cammino φ che congiunge le due curve e la
+curva γ1 φ(−γ2 )(−φ) è chiusa e omotopa ad un punto, pertanto
+     Z                            Z            Z           Z             Z
+0=                   F · dx =         F · dx +    F · dx +      F · dx +     F · dx
+      γ1 φ(−γ2 )(−φ)               γ            φ           −γ2           −φ
+                                  Z 1          Z
+                             =        F · dx −    F · dx
+                                 γ1           γ2
+
+         L.Freddi                                                  April 22, 2026   22 / 36
+Esercizi
+Esercizio
+Dato il campo vettoriale
+
+                                  x2 + 2xy + 2y    x2 + 2x 
+                     F (x, y) =       2      2
+                                                ,− 2
+                                    (x − 2y)      (x − 2y)2
+
+  1   determinarne il dominio e stabilire se è un insieme aperto connesso e, nel
+      caso in cui non lo sia, stabilire se si può scrivere come unione di uno o più
+      aperti connessi (componenti connesse);
+  2   per ciascuna componente connessa del dominio, stabilire se si tratta di un
+      insieme semplicemente connesso;
+  3   dire se il campo F è conservativo ed in caso affermativo determinarne tutti i
+      potenziali;
+  4   calcolare l’integrale di F su una curva congiungente i punti P = (−2, 1) e
+      Q = (2, 1). È possibile affermare che il valore dell’integrale non dipende
+      dalla curva scelta per andare da P a Q?
+
+          L.Freddi                                                 April 22, 2026   23 / 36
+Esercizi
+1. Osserviamo che
+                                  D =E∪S
+dove
+       E = {(x, y) ∈ R2 : 2y > x2 }
+       S = {(x, y) ∈ R2 : 2y < x2 }
+che sono insiemi aperti, perché controimmagini degli aperti (−∞, 0) e (0, +∞)
+mediante l’applicazione continua (x, y) 7→ x2 − 2y.
+
+
+
+
+          L.Freddi                                           April 22, 2026   24 / 36
+Esercizi
+1. Osserviamo che
+                                    D =E∪S
+dove
+       E = {(x, y) ∈ R2 : 2y > x2 }
+       S = {(x, y) ∈ R2 : 2y < x2 }
+che sono insiemi aperti, perché controimmagini degli aperti (−∞, 0) e (0, +∞)
+mediante l’applicazione continua (x, y) 7→ x2 − 2y.
+       Poiché E ∩ S = ∅ allora D non è connesso.
+
+
+
+
+          L.Freddi                                           April 22, 2026   24 / 36
+Esercizi
+1. Osserviamo che
+                                    D =E∪S
+dove
+       E = {(x, y) ∈ R2 : 2y > x2 }
+       S = {(x, y) ∈ R2 : 2y < x2 }
+che sono insiemi aperti, perché controimmagini degli aperti (−∞, 0) e (0, +∞)
+mediante l’applicazione continua (x, y) 7→ x2 − 2y.
+       Poiché E ∩ S = ∅ allora D non è connesso.
+       E ed S sono semplicemente connessi
+
+
+
+
+          L.Freddi                                           April 22, 2026   24 / 36
+Esercizi
+3. Si verifica facilmente che il campo è irrotazionale. È facile inoltre verificare che
+la funzione
+                                              x2 + 2x
+                                f (x, y) = −
+                                             2(x2 − 2y)
+è un potenziale di F su tutto il dominio D, pertanto F è conservativo su tutto il
+dominio. Poiché D ha due componenti connesse allora tutti i potenziali di F sono
+della forma
+                               x2 + 2x
+                 f (x, y) = −             + C1 φE (x, y) + C2 φS (x, y)
+                              2(x2 − 2y)
+dove φE e φS denotano le funzioni caratteristiche degli insiemi E e S
+rispettivamente.
+
+
+
+
+          L.Freddi                                                  April 22, 2026   25 / 36
+Esercizi
+4. Poichè F è conservativo il valore dell’integrale dipende solo dagli estremi della
+curva scelta e dal verso di percorrenza. Indicata con γ una qualunque curva
+congiungente i due punti si ha in particolare
+                       Z
+                          F · dx = f (2, 1) − f (−2, 1) = −2.
+                        γ
+
+
+
+
+         L.Freddi                                                 April 22, 2026   26 / 36
+Esercizi
+Esercizio (per casa)
+Si consideri il campo vettoriale
+                                                        
+                             F (x, y) = A(x, y), B(x, y)
+
+dove
+                                               x2 − y 2 − 1
+                       A(x, y) =
+                                   (x2 − 1)2 + 2y 2 (x2 + 1) + y 4
+                                                   2xy
+                       B(x, y) =
+                                   (x2 − 1)2 + 2y 2 (x2 + 1) + y 4
+
+  1    Determinare il dominio di F e dire se è connesso, convesso o semplicemente
+       connesso;
+  2    stabilire se il campo è conservativo
+       2.1) nella palla aperta di centro l’origine e raggio 1;
+       2.2) nel suo dominio.
+
+           L.Freddi                                                  April 22, 2026   27 / 36
+Esercizi
+1. Le uniche soluzioni dell’equazione
+                        (x2 − 1)2 + 2y 2 (x2 + 1) + y 4 = 0
+sono (1, 0) e (−1, 0), pertanto il dominio di F è l’insieme
+D = R2 \ {(1, 0), (−1, 0)} che è connesso, ma non è semplicemente connesso (e
+quindi nemmeno convesso) in quanto le circonferenze di centro (1, 0) e (−1, 0) e
+raggio 1 non sono omotope a costanti.
+
+
+
+
+         L.Freddi                                             April 22, 2026   28 / 36
+Esercizi
+2.1. Il campo è irrotazionale, infatti
+                     ∂A   ∂B      y 4 − 3x4 − 2x2 y 2 + 2y 2 + 2x2 + 1
+                        =    = 8y                                       .
+                     ∂y   ∂x        [(x2 − 1)2 + 2y 2 (x2 + 1) + y 4 ]2
+pertanto è conservativo su ogni sottoinsieme semplicemente connesso del dominio
+D ed in particolare sulla palla aperta di centro l’origine e raggio 1.
+
+
+
+
+          L.Freddi                                                  April 22, 2026   29 / 36
+Esercizi
+2.2 Per stabilire se il campo è conservativo anche sull’intero dominio cominciamo
+col calcolare                         Z
+                                         F · dx
+                                        γ
+dove γ è la circonferenza di centro (1, 0) raggio 1, cioè la curva di equazioni
+parametriche             
+                            x(t) = 1 + cos t
+                                               , t ∈ [0, 2π].
+                            y(t) = sen t
+Si ha
+                            Z 2π
+                                  (1 + cos t)2 − sen2 t − 1
+            Z
+                F · dx =                                      (− sen t) dt
+              γ               0     (2 + cos t)2 + sen2 t
+                               Z 2π
+                                      2(1 + cos t) sen t
+                            +                              cos t dt
+                                0   (2 + cos t)2 + sen2 t
+                            Z 2π                   Z π
+                                     sen t                   sen t
+                        =                     dt =                    dt = 0
+                              0   5 + 4 cos t        −π 5 + 4 cos t
+dove nell’ultima uguaglianza è stato usato il fatto che l’integranda è dispari.
+
+         L.Freddi                                                  April 22, 2026   30 / 36
+Esercizi
+Analogamente risulta nullo anche l’integrale sulla circonferenza di centro (−1, 0)
+raggio 1, e pertanto è nullo l’integrale di F su qualunque curva chiusa con
+sostegno in D. Ne consegue che il campo è conservativo sull’intero dominio.
+
+
+
+
+         L.Freddi                                               April 22, 2026   31 / 36
+Esercizi
+Esercizio (per casa)
+Dato il campo vettoriale
+                                        4x            9y      
+                     F (x, y) =         2    2
+                                               ,      2    2
+                                  log(4x + 9y ) log(4x + 9y )
+
+
+  1   determinarne il dominio D di F e stabilire se è un insieme aperto connesso
+      e, nel caso in cui non lo sia, stabilire se si può scrivere come unione di uno o
+      più aperti connessi (componenti connesse);
+  2   per ciascuna componente connessa di D, stabilire se si tratta di un insieme
+      convesso o semplicemente connesso;
+  3   dire se il campo F è conservativo su tutto il dominio e, nel caso in cui non
+      lo sia, indicare eventuali sottoinsiemi del dominio in cui risulta conservativo.
+
+
+
+
+          L.Freddi                                                 April 22, 2026   32 / 36
+Esercizi
+                                                             
+1. Il dominio D = R2 \ {(x, y) : 4x2 + 9y 2 = 1} ∪ {(0, 0)} è un insieme
+aperto infatti il suo complementare
+R2 \ D = {(x, y) ∈ R2 : 4x2 + 9y 2 = 1} ∪ {(0, 0)} è chiuso in quanto unione del
+chiuso {(0, 0)} e della controimmagine del sottoinsieme chiuso {1} di R mediante
+l’applicazione continua (x, y) 7→ 4x2 + 9y 2 .
+
+Si ha poi D = E ∪ S dove
+     E = {(x, y) ∈ R2 : 4x2 + 9y 2 < 1} \ {(0, 0)}
+     S = {(x, y) ∈ R2 : 4x2 + 9y 2 > 1}
+che sono insiemi aperti, il primo perchè controimmagine dell’aperto (−∞, 1)
+privata del chiuso {(0, 0)} mediante l’applicazione continua (x, y) 7→ 4x2 + 9y 2 e
+il secondo perchè controimmagine mediante la stessa applicazione dell’aperto
+(1, +∞). Siccome E ∩ S = ∅ allora D non è connesso.
+
+
+
+
+         L.Freddi                                               April 22, 2026   33 / 36
+Esercizi
+2. Come già osservato nel punto precedente, D è costituito da due componenti
+connesse E ed S. Nessuno di questi due insiemi é semplicemente semplicemente
+connesso (quindi nemmeno convesso).
+3. Si verifica facilmente che il campo è conservativo. Inoltre si vede con calcolo
+diretto che l’integrale di F su ogni ellisse di equazione cartesiana
+                          4x2 + 9y 2 = c2 , c2 > 0, c2 ̸= 1
+risulta nullo. Si ha allora che anche l’integrale su ogni curva chiusa con sostegno
+contenuto nel dominio di F risulta nullo, e pertanto il campo risulta conservativo
+su D.
+
+
+
+
+         L.Freddi                                                April 22, 2026   34 / 36
+Esercizi
+Esercizio (per casa)
+Dire per quali valori di a reale il campo vettoriale
+                                                2x
+                             Ax (x, y) =               2 +y
+                                           (2x2 + y 2 )
+                                               ay
+                            Ay (x, y) =                2 + ax
+                                           (2x2 + y 2 )
+
+è conservativo, e calcolarne i potenziali.
+
+
+
+
+         L.Freddi                                               April 22, 2026   35 / 36
+Esercizi
+Esercizio (per casa)
+Calcolare, se possibile, l’integrale di linea del campo vettoriale
+                                           4x
+                                 Ax =
+                                      1 − 2x2 − y 2
+                                           2y
+                                 Ay =
+                                      1 − 2x2 − y 2
+
+lungo le circonferenze di centro l’origine e raggio 3/4 e 2 rispettivamente.
+Ripetere l’esercizio per il campo
+
+                                    Bx = Ax + y
+                                    By = Ay .
+
+
+
+
+         L.Freddi                                                    April 22, 2026   36 / 36
