@@ -6,20 +6,24 @@ Proprietà della f.g.m.
 
 3. Se $X$ e $Y$ sono indipendenti, si ottiene
 
-$$m_{X+Y}(t) = m_X(t) \, m_Y(t) \,.$$
+$$
+m_{X+Y}(t) = m_X(t) \, m_Y(t) \,.
+$$
 
 Più in generale: se $X_1, \dots, X_n$ sono indipendenti, e
 $S_n = \sum_{i=1}^n X_i$
 
-$$m_{S_n}(t) = \prod_{i=1}^n m_{X_i}(t) \, ,$$
+$$
+m_{S_n}(t) = \prod_{i=1}^n m_{X_i}(t) \, ,
+$$
 
 e se le $X_i$ hanno tutte la stessa distribuzione
 
-$$m_{S_n}(t) = (m_X(t))^n \,.$$
+$$
+m_{S_n}(t) = (m_X(t))^n \,.
+$$
 
 Commento: la proprietà $1.$ dà il nome al metodo (e a volte è utile), ma le proprietà importanti sono la $2.$ e la $3.$
-
-
 
 <!-- ===== PAGINA 62 ===== -->
 
@@ -39,8 +43,6 @@ Commento: la proprietà $1.$ dà il nome al metodo (e a volte è utile), ma le p
   <span>4 / 7</span>
 </div>
 
-
-
 <!-- ===== PAGINA 63 ===== -->
 
 <!-- Pagina 63 -->
@@ -52,17 +54,21 @@ Usando le proprietà della f.g.m. si possono ottenere molti risultati sulle v.c.
 * Otteniamo la f.g.m. di $X + Y$, con $X \sim \mathcal{P}(\lambda_1)$ e $Y \sim \mathcal{P}(\lambda_2)$, indipendenti
 * dalla proprietà 3. (e usando la tabella) si ottiene
 
-$$m_{X+Y}(t) = m_X(t) \, m_Y(t) = e^{\lambda_1 (e^t - 1)} \, e^{\lambda_2 (e^t - 1)},$$
+$$
+m_{X+Y}(t) = m_X(t) \, m_Y(t) = e^{\lambda_1 (e^t - 1)} \, e^{\lambda_2 (e^t - 1)},
+$$
 
-$$m_{X+Y}(t) = e^{(\lambda_1 + \lambda_2)(e^t - 1)}$$
+$$
+m_{X+Y}(t) = e^{(\lambda_1 + \lambda_2)(e^t - 1)}
+$$
 
 * Si riconosce la f.g.m. di una distribuzione $\mathcal{P}(\lambda_1 + \lambda_2)$, e allora dalla proprietà 2. segue che
 
-$$X + Y \sim \mathcal{P}(\lambda_1 + \lambda_2)$$
+$$
+X + Y \sim \mathcal{P}(\lambda_1 + \lambda_2)
+$$
 
 * Il risultato si estende ad una somma di un numero qualsiasi di v.c. di Poisson indipendenti.
-
-
 
 <!-- ===== PAGINA 64 ===== -->
 
@@ -76,13 +82,15 @@ $$X + Y \sim \mathcal{P}(\lambda_1 + \lambda_2)$$
   - Sia $X \sim \mathcal{N}(\mu, \sigma^2)$ e $Y = a + b X$, con $a, b \in \mathbb{R}$
   - Si ottiene facilmente che
 
-$$m_Y(t) = E[e^{(a+b X)t}] = e^{a t} m_X(b t) = e^{(a+b\mu)t + b^2 t^2 \sigma^2 / 2}\,,$$
+$$
+m_Y(t) = E[e^{(a+b X)t}] = e^{a t} m_X(b t) = e^{(a+b\mu)t + b^2 t^2 \sigma^2 / 2}\,,
+$$
 
   e si riconosce la f.g.m. di una distribuzione $\mathcal{N}(a + b\mu, b^2 \sigma^2)$, per cui
 
-$$Y \sim \mathcal{N}(a + b\mu, b^2 \sigma^2)\,.$$
-
-
+$$
+Y \sim \mathcal{N}(a + b\mu, b^2 \sigma^2)\,.
+$$
 
 <!-- ===== PAGINA 65 ===== -->
 
@@ -93,17 +101,19 @@ $$Y \sim \mathcal{N}(a + b\mu, b^2 \sigma^2)\,.$$
 * Un'altra applicazione notevole è quella per ottenere la distribuzione di una combinazione lineare di v.c. normali indipendenti.
 * Anche il teorema del limite centrale si dimostra utilizzando la f.g.m.: se $X_1, \dots, X_n$ sono i.i.d. con $E(X_i) = \mu$ e $V(X_i) = \sigma^2$, si può verificare che la f.g.m. della v.c.
 
-$$Z_n = \frac{\overline{X} - \mu}{\sqrt{\frac{\sigma^2}{n}}}$$
+$$
+Z_n = \frac{\overline{X} - \mu}{\sqrt{\frac{\sigma^2}{n}}}
+$$
 
 tende alla f.g.m. di una $\mathcal{N}(0, 1)$ per $n \to \infty$.
 
 * Un altro risultato è che se $X \sim \mathcal{N}(\mu, \sigma^2)$, allora
 
-$$m_X(1) = E\left(e^X\right) = e^{\mu + \frac{1}{2}\sigma^2}$$
+$$
+m_X(1) = E\left(e^X\right) = e^{\mu + \frac{1}{2}\sigma^2}
+$$
 
 è la media di $Y = e^X$ con distribuzione $\text{lognormale}(\mu, \sigma^2)$.
-
-
 
 <!-- ===== PAGINA 66 ===== -->
 
@@ -111,8 +121,6 @@ $$m_X(1) = E\left(e^X\right) = e^{\mu + \frac{1}{2}\sigma^2}$$
 
 Introduzione all'inferenza statistica:
 campionamento e distribuzioni campionarie
-
-
 
 <!-- ===== PAGINA 67 ===== -->
 
@@ -129,8 +137,6 @@ campionamento e distribuzioni campionarie
 ---
 a.a 2024/2025 — R. Bellio \hfill 2 / 28
 
-
-
 <!-- ===== PAGINA 68 ===== -->
 
 <!-- Pagina 68 -->
@@ -146,8 +152,6 @@ Nonostante le informazioni sulla popolazione siano incomplete, in un problema di
 *a.a 2024/2025 — R. Bellio*  
 *3 / 28*
 
-
-
 <!-- ===== PAGINA 69 ===== -->
 
 <!-- Pagina 69 -->
@@ -161,8 +165,6 @@ Nonostante le informazioni sulla popolazione siano incomplete, in un problema di
 * **la rilevazione "distrugge" le unità statistiche** e quindi, dopo una rilevazione esaustiva, la popolazione di partenza non interessa più perché non esiste più!
 
 * **precisione dei risultati**: a volte rilevazioni campionarie (incomplete) portano a risultati più precisi di rilevazioni esaustive.
-
-
 
 <!-- ===== PAGINA 70 ===== -->
 
@@ -178,8 +180,6 @@ Nonostante le informazioni sulla popolazione siano incomplete, in un problema di
   
   B) scegliere 10 pezzi a caso tra quelli più "semplici" da prendere (ad esempio, considerando un gruppo di 10 pezzi posti vicino all'entrata del magazzino).
 
-
-
 <!-- ===== PAGINA 71 ===== -->
 
 <!-- Pagina 71 -->
@@ -191,8 +191,6 @@ Nonostante le informazioni sulla popolazione siano incomplete, in un problema di
   - Nel secondo caso però occorre cautela: potremmo aver scelto pezzi prodotti tutti da un solo macchinario che produce pezzi con peso medio leggermente più basso, ed ottenere così un valore troppo basso.
 
 Quello che cambia nei due casi è la **relazione tra la popolazione e il campione**.
-
-
 
 <!-- ===== PAGINA 72 ===== -->
 
@@ -213,8 +211,6 @@ D'ora in poi si assumerà sempre di disporre di un c.c.s., estratto con reinseri
 ---
 *(a.a. 2024/2025 — R. Bellio)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *7 / 28*
 
-
-
 <!-- ===== PAGINA 73 ===== -->
 
 <!-- Pagina 73 -->
@@ -233,8 +229,6 @@ In questo caso la popolazione di riferimento è data da tutti i pazienti a cui p
 
 a.a 2024/2025 — R. Bellio \hfill 8 / 28
 
-
-
 <!-- ===== PAGINA 74 ===== -->
 
 <!-- Pagina 74 -->
@@ -251,8 +245,6 @@ Una conseguenza importante è che è possibile utilizzare in maniera naturale il
 
 *(a.a 2024/2025 — R. Bellio)* \hfill 9 / 28
 
-
-
 <!-- ===== PAGINA 75 ===== -->
 
 <!-- Pagina 75 -->
@@ -261,15 +253,15 @@ Una conseguenza importante è che è possibile utilizzare in maniera naturale il
 
 L'ipotesi fondamentale nell'inferenza statistica è che i dati campionari osservati, denotati anche con
 
-$$y = (y_1, \dots, y_n),$$
+$$
+y = (y_1, \dots, y_n),
+$$
 
 siano la **realizzazione di $n$ variabili casuali** $Y_1, \dots, Y_n$.
 
 Questo tiene conto del fatto che abbiamo estratto uno tra i molti possibili campioni, ovvero della presenza di **variabilità campionaria**. (L'ipotesi non sarebbe necessaria se potessimo osservare tutta la popolazione!)
 
 Nel caso di un campione casuale semplice, le $n$ v.c. che si suppone abbiano generato i dati sono **variabili casuali indipendenti e identicamente distribuite (i.i.d.)**
-
-
 
 <!-- ===== PAGINA 76 ===== -->
 
@@ -282,8 +274,6 @@ La distribuzione assunta per le singole variabili dipende dalla natura dei dati.
 In ogni caso, la distribuzione assunta per le v.c. del campione dipenderà da ignote costanti dette **parametri**, vale a dire le quantità $p, \mu, \sigma^2, \alpha, \beta \dots$
 
 I parametri entrano nella definizione della distribuzione delle variabili del campione $Y_1, \ldots, Y_n$. Nell'**inferenza statistica parametrica** si assume che la distribuzione delle v.c. del campione sia nota a meno dei valori dei parametri, che corrispondono tipicamente agli aspetti di interesse dell'analisi.
-
-
 
 <!-- ===== PAGINA 77 ===== -->
 
@@ -305,8 +295,6 @@ Scopo dell'inferenza statistica è utilizzare i dati del campione per ottenere i
 
 a.a 2024/2025 — R. Bellio \hfill 12 / 28
 
-
-
 <!-- ===== PAGINA 78 ===== -->
 
 <!-- Pagina 78 -->
@@ -317,8 +305,6 @@ a.a 2024/2025 — R. Bellio \hfill 12 / 28
 * In ogni caso, tali ipotesi possono essere considerate al più una descrizione **semplice** ed **operativamente utile** di una realtà complessa, quindi ci possiamo accontentare di una validità almeno **approssimata**.
 * Esistono comunque metodi per trattare dati con una certa struttura di dipendenza (come le serie storiche), o per prescindere dalla conoscenza della forma della distribuzione (i **metodi non parametrici**). Essi comunque sono un'estensione dei metodi della statistica parametrica.
 
-
-
 <!-- ===== PAGINA 79 ===== -->
 
 <!-- Pagina 79 -->
@@ -327,17 +313,19 @@ a.a 2024/2025 — R. Bellio \hfill 12 / 28
 
 Si chiama **statistica (campionaria)** ogni funzione dei dati, che viene usata per sintetizzare opportunamente il campione
 
-$$T = t(Y_1, \dots, Y_n) \, .$$
+$$
+T = t(Y_1, \dots, Y_n) \, .
+$$
 
 Sono esempi di statistiche gli indici utilizzati nella statistica descrittiva
 
-$$\overline{Y}, S^2 \text{, la mediana campionaria, } \dots \, ,$$
+$$
+\overline{Y}, S^2 \text{, la mediana campionaria, } \dots \, ,
+$$
 
 e occorre sempre distinguere tra la v.c. che rappresenta la statistica e il valore che tale statistica assume in un particolare campione osservato.
 
 Tipicamente, è di interesse determinare la distribuzione di alcune statistiche di interesse, ovvero la loro **distribuzione campionaria**. A tal fine, si utilizzano i metodi probabilistici sviluppati per le funzioni di $n$ v.c. indipendenti.
-
-
 
 <!-- ===== PAGINA 80 ===== -->
 
@@ -355,8 +343,6 @@ Vedremo in sintesi alcuni risultati per variabili casuali indipendenti (con molt
 ---
 *a.a 2024/2025 — R. Bellio* \hfill *15 / 28*
 
-
-
 <!-- ===== PAGINA 81 ===== -->
 
 <!-- Pagina 81 -->
@@ -364,12 +350,16 @@ Vedremo in sintesi alcuni risultati per variabili casuali indipendenti (con molt
 # A) Richiami sulle somme di variabili casuali
 
 * $Y_1, \ldots, Y_n$ v.c. con $E(Y_1) = \mu_1, \ldots, E(Y_n) = \mu_n$
-  $$\Rightarrow E(Y_1 + \ldots + Y_n) = \mu_1 + \ldots + \mu_n \,.$$
+  
+$$
+\Rightarrow E(Y_1 + \ldots + Y_n) = \mu_1 + \ldots + \mu_n \,.
+$$
 
 * $Y_1, \ldots, Y_n$ v.c. **indipendenti** con $V(Y_1) = \sigma_1^2, \ldots, V(Y_n) = \sigma_n^2$
-  $$\Rightarrow V(Y_1 + \ldots + Y_n) = \sigma_1^2 + \ldots + \sigma_n^2 \,.$$
-
-
+  
+$$
+\Rightarrow V(Y_1 + \ldots + Y_n) = \sigma_1^2 + \ldots + \sigma_n^2 \,.
+$$
 
 <!-- ===== PAGINA 82 ===== -->
 
@@ -379,15 +369,19 @@ Vedremo in sintesi alcuni risultati per variabili casuali indipendenti (con molt
 
 Una conseguenza importante dei risultati appena visti riguarda la **variabile casuale media campionaria**
 
-$$\overline{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i$$
+$$
+\overline{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i
+$$
 
 - Se $Y_1, \dots, Y_n$ sono v.c. indipendenti con $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$, allora
 
-$$E(\overline{Y}) = \sum_{i=1}^{n} \frac{E(Y_i)}{n} = n \frac{\mu}{n} = \mu \text{,}$$
+$$
+E(\overline{Y}) = \sum_{i=1}^{n} \frac{E(Y_i)}{n} = n \frac{\mu}{n} = \mu \text{,}
+$$
 
-$$V(\overline{Y}) = \sum_{i=1}^{n} \frac{V(Y_i)}{n^2} = n \frac{\sigma^2}{n^2} = \frac{\sigma^2}{n} \text{.}$$
-
-
+$$
+V(\overline{Y}) = \sum_{i=1}^{n} \frac{V(Y_i)}{n^2} = n \frac{\sigma^2}{n^2} = \frac{\sigma^2}{n} \text{.}
+$$
 
 <!-- ===== PAGINA 83 ===== -->
 
@@ -397,17 +391,21 @@ $$V(\overline{Y}) = \sum_{i=1}^{n} \frac{V(Y_i)}{n^2} = n \frac{\sigma^2}{n^2} =
 
 Nel caso di variabili i.i.d., con $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$, ci sono dei risultati anche per **variabile casuale varianza campionaria**
 
-$$S^2 = \frac{1}{n-1} \sum_{i=1}^n (Y_i - \overline{Y})^2$$
+$$
+S^2 = \frac{1}{n-1} \sum_{i=1}^n (Y_i - \overline{Y})^2
+$$
 
 - Se $Y_1, \dots, Y_n$ sono v.c. indipendenti con $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$, allora
 
-$$E(S^2) = \sigma^2$$
+$$
+E(S^2) = \sigma^2
+$$
 
-$$V(S^2) = (\sigma^2)^2 \left( \frac{2}{n-1} + \frac{\kappa}{n} \right)\text{,}$$
+$$
+V(S^2) = (\sigma^2)^2 \left( \frac{2}{n-1} + \frac{\kappa}{n} \right)\text{,}
+$$
 
 con $\kappa$ costante che dipende dalla distribuzione ($0$ per $Y_i$ normali, ma non in generale).
-
-
 
 <!-- ===== PAGINA 84 ===== -->
 
@@ -417,21 +415,25 @@ con $\kappa$ costante che dipende dalla distribuzione ($0$ per $Y_i$ normali, ma
 
 **Teorema** Sia $Y_1, Y_2, \dots$ una successione di v.c. indipendenti, ciascuna con $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$. Allora, posto $Z_n = \sqrt{n}(\overline{Y} - \mu)/\sigma$, per ogni $z$
 
-$$\lim_{n \to \infty} P(Z_n \le z) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{z} e^{-t^2/2} dt = \Phi(z) \, .$$
+$$
+\lim_{n \to \infty} P(Z_n \le z) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{z} e^{-t^2/2} dt = \Phi(z) \, .
+$$
 
 In simboli il teorema del limite centrale (t.l.c.) si denota scrivendo
 
-$$Z_n = \sqrt{n}\frac{(\overline{Y} - \mu)}{\sigma} \xrightarrow{\mathcal{D}} \mathcal{N}(0, 1) \, ,$$
+$$
+Z_n = \sqrt{n}\frac{(\overline{Y} - \mu)}{\sigma} \xrightarrow{\mathcal{D}} \mathcal{N}(0, 1) \, ,
+$$
 
 dove $\xrightarrow{\mathcal{D}}$ si legge "converge in distribuzione".
 
 Una lettura **pratica** del teorema del limite centrale è la seguente:
 
-$$\overline{Y} \stackrel{a}{\sim} \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right) \, ,$$
+$$
+\overline{Y} \stackrel{a}{\sim} \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right) \, ,
+$$
 
 dove $\stackrel{a}{\sim}$ significa "distribuita approssimativamente".
-
-
 
 <!-- ===== PAGINA 85 ===== -->
 
@@ -441,15 +443,15 @@ dove $\stackrel{a}{\sim}$ significa "distribuita approssimativamente".
 
 Il t.l.c. permette di approssimare la distribuzione di $\overline{Y}$, o, in maniera equivalente, della somma di $n$ v.c. i.i.d.
 
-$$\sum_{i=1}^{n} Y_i \stackrel{a}{\sim} \mathcal{N}(n\mu, n\sigma^2) \ .$$
+$$
+\sum_{i=1}^{n} Y_i \stackrel{a}{\sim} \mathcal{N}(n\mu, n\sigma^2) \ .
+$$
 
 Si tratta di un risultato molto utile, del tipo chiamato **per grandi campioni**, nel senso che l'approssimazione è migliore per dimensioni campionarie elevate. Più precisamente, *quanto* deve essere grande $n$ dipende dalla distribuzione della popolazione:
 
 * se il campione proviene da una distribuzione quasi simmetrica, l'approssimazione è buona già per piccoli valori di $n$;
 * se la distribuzione è molto asimmetrica, è necessario un valore di $n$ abbastanza grande;
 * per la maggior parte delle distribuzioni, un campione di numerosità 30 (o più) è sufficientemente elevato affinché l'approssimazione normale sia adeguata.
-
-
 
 <!-- ===== PAGINA 86 ===== -->
 
@@ -459,15 +461,15 @@ Si tratta di un risultato molto utile, del tipo chiamato **per grandi campioni**
 
 Se consideriamo $n$ v.c. bernoulliane $Y_i \sim \text{Bernoulli}(p)$, $i = 1, \dots, n$, indipendenti, si ottiene facilmente che
 
-$$\sum_{i=1}^{n} Y_i \sim Bi(n, p) \,,$$
+$$
+\sum_{i=1}^{n} Y_i \sim Bi(n, p) \,,
+$$
 
 Per $n$ elevato è più semplice utilizzare il t.l.c., che permette di **approssimare la binomiale con la normale**.
 
 Al crescere di $n$, la distribuzione di una v.c. binomiale di parametri $n$ e $p$ si "avvicina" sempre di più a quella di una normale con parametri $\mu = np$ e $\sigma^2 = np(1-p)$.
 
 L'approssimazione è ritenuta buona se $np > 5$ e $n(1-p) > 5$ (eventualmente utilizzando **correzioni di continuità** ($\pm 0.5$), che migliorano l'approssimazione normale per v.c. discrete).
-
-
 
 <!-- ===== PAGINA 87 ===== -->
 
@@ -487,8 +489,6 @@ L'approssimazione è ritenuta buona se $np > 5$ e $n(1-p) > 5$ (eventualmente ut
 
 a.a 2024/2025 — R. Bellio \hfill 22 / 28
 
-
-
 <!-- ===== PAGINA 88 ===== -->
 
 <!-- Pagina 88 -->
@@ -497,15 +497,17 @@ a.a 2024/2025 — R. Bellio \hfill 22 / 28
 
 Se $Y_i \sim \mathcal{P}(\lambda_i)$, $i = 1, \dots, n$, indipendenti, allora
 
-$$\sum_{i=1}^n Y_i \sim \mathcal{P}\left(\sum_{i=1}^n \lambda_i\right) \text{.}$$
+$$
+\sum_{i=1}^n Y_i \sim \mathcal{P}\left(\sum_{i=1}^n \lambda_i\right) \text{.}
+$$
 
 In particolare, per v.c. i.i.d. (dove $\lambda_i = \lambda$) si ottiene $\sum_{i=1}^n Y_i \sim \mathcal{P}(n \lambda)$. Anche in questo caso, tuttavia, il t.l.c. è spesso utilizzato, ovvero
 
-$$\sum_{i=1}^n Y_i \stackrel{a}{\sim} \mathcal{N}(n\lambda, n\lambda) \text{.}$$
+$$
+\sum_{i=1}^n Y_i \stackrel{a}{\sim} \mathcal{N}(n\lambda, n\lambda) \text{.}
+$$
 
 L'approssimazione è ritenuta buona se $n\lambda > 10$.
-
-
 
 <!-- ===== PAGINA 89 ===== -->
 
@@ -517,15 +519,17 @@ Per il caso $Y_i \sim \mathcal{N}(\mu, \sigma^2)$, $i = 1, \dots, n$, indipenden
 
 Come caso particolare della proprietà che combinazioni lineari di normali indipendenti sono ancora normali, si ottiene
 
-$$\overline{Y} \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right),$$
+$$
+\overline{Y} \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right),
+$$
 
-$$\sum_{i=1}^n Y_i \sim \mathcal{N}(n\mu, n\sigma^2),$$
+$$
+\sum_{i=1}^n Y_i \sim \mathcal{N}(n\mu, n\sigma^2),
+$$
 
 senza alcuna approssimazione!
 
 Altri risultati richiedono preliminarmente la definizione di due distribuzioni collegate alla normale, ovvero la **distribuzione chi-quadrato** e la **distribuzione $t$ di Student**.
-
-
 
 <!-- ===== PAGINA 90 ===== -->
 
@@ -535,7 +539,9 @@ Altri risultati richiedono preliminarmente la definizione di due distribuzioni c
 
 La somma di $n$ v.c. normali standard indipendenti elevate al quadrato ha distribuzione chi-quadrato con $n$ gradi di libertà, in simboli $\chi_n^2$. Ovvero, se $Z_i \sim \mathcal{N}(0, 1)$, $i = 1, \dots, n$, indipendenti,
 
-$$Y = \sum_{i=1}^{n} Z_i^2 \sim \chi_n^2$$
+$$
+Y = \sum_{i=1}^{n} Z_i^2 \sim \chi_n^2
+$$
 
 La distribuzione è un caso particolare di distribuzione Gamma, con $\alpha = n/2$ e $\beta = 2$, e allora si trova $E(Y) = n$ e $V(Y) = 2n$.
 
@@ -546,6 +552,4 @@ La distribuzione è un caso particolare di distribuzione Gamma, con $\alpha = n/
 ---
 
 a.a 2024/2025 — R. Bellio \hfill 25 / 28
-
-
 
