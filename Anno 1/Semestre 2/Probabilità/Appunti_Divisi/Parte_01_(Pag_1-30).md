@@ -910,7 +910,7 @@ $$
 $$
 
 $$
-\llap{\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\llap{\llap{\llap{\llap{\llap{\llap{\llap{\llap{\llap{\llap{\llap{\llap{formula di Newton}}}}}}}}}}}}
+\quad \text{formula di Newton}}}}}}}}}}}}}
 $$
 
 a riprova che la distribuzione è ben definita.
