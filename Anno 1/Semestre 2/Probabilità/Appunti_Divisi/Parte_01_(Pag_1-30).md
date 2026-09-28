@@ -570,8 +570,7 @@ $$
 
 <!-- Pagina 14 -->
 
-```markdown
-Prova: $V(\underbrace{aX+b}_{Y}) = E \left[ (Y - \mu_Y)^2 \right]$  ④
+``Prova: $V(\underbrace{aX+b}_{Y}) = E \left[ (Y - \mu_Y)^2 \right]$  ④
 
 $$
 = E \left[ (aX + b - a\mu_X - b)^2 \right]
@@ -608,8 +607,7 @@ $$
 = a^2 E \left[ (X - \mu_X)^2 \right] + b^2 E \left[ (Y - \mu_Y)^2 \right] + 2ab \cdot E \left[ (X - \mu_X)(Y - \mu_Y) \right] \text{, ovvero il risultato}
 $$
 
-```
-
+``
 <!-- ===== PAGINA 15 ===== -->
 
 <!-- Pagina 15 -->
