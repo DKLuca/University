@@ -289,7 +289,7 @@ $$
 
 ---
 
-• $V[g(X)] = E\left\{ \left[ g(X) - \mu_{g(X)} \right]^2 \right\}$ 
+• $V[g(X)] = E\left\lbrace  \left[ g(X) - \mu_{g(X)} \right]^2 \right\rbrace $ 
 *(Nota in rosso su $\mu_{g(X)}$: "è una costante")*
 
 che si calcola come:
@@ -593,15 +593,15 @@ $$
 **Prova:**
 
 $$
-V(aX + bY) = E \left\{ \left[ (aX + bY) - (a\mu_X + b\mu_Y) \right]^2 \right\}
+V(aX + bY) = E \left\lbrace  \left[ (aX + bY) - (a\mu_X + b\mu_Y) \right]^2 \right\rbrace 
 $$
 
 $$
-= E \left\{ \left[ a(X - \mu_X) + b(Y - \mu_Y) \right]^2 \right\}
+= E \left\lbrace  \left[ a(X - \mu_X) + b(Y - \mu_Y) \right]^2 \right\rbrace 
 $$
 
 $$
-= E \left\{ a^2(X - \mu_X)^2 + b^2(Y - \mu_Y)^2 + 2ab(X - \mu_X)(Y - \mu_Y) \right\} = \longrightarrow \text{applico RIS 5}
+= E \left\lbrace  a^2(X - \mu_X)^2 + b^2(Y - \mu_Y)^2 + 2ab(X - \mu_X)(Y - \mu_Y) \right\rbrace  = \longrightarrow \text{applico RIS 5}
 $$
 
 $$
@@ -848,7 +848,7 @@ otteniamo la distribuzione: defini-
 per prima cosa gli eventi
 
 $$
-A_i = \{ \text{Esce 6 alla } i-\text{esima prova} \}
+A_i = \lbrace  \text{Esce 6 alla } i-\text{esima prova} \rbrace 
 $$
 
 $$
