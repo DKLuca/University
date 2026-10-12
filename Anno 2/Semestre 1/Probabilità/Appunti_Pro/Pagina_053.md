@@ -1,12 +1,16 @@
 <!-- Pagina 53 -->
 
+
 (III) DISTRIBUZIONE GAMMA (5)
 
+
 Generalizza l'esponenziale, prende il nome dalla
+
 
 $$
 \text{FUNZIONE GAMMA} \quad \Gamma(\alpha) = \int_0^\infty x^{\alpha-1} e^{-x} \, dx, \text{ per } \alpha > 0
 $$
+
 
 $$
 \begin{align*}
@@ -16,9 +20,11 @@ $$
 \end{align*}
 $$
 
+
 $$
 X \sim \text{Ga}\left(\alpha, \frac{1}{\beta}\right) \quad \begin{aligned} &\alpha > 0 \\ &\beta > 0 \end{aligned}
 $$
+
 
 $$
 \begin{array}{ccc}
@@ -27,7 +33,9 @@ $$
 \end{array}
 $$
 
+
 Ha f. densità di probabilità:
+
 
 $$
 f_X(x; \alpha, \beta) = \begin{lbrace}

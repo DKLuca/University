@@ -1,8 +1,11 @@
 <!-- Pagina 117 -->
 
+
 # Esempio: contaminazione d'alluminio
 
+
 I dati si riferiscono ad un campione di $n = 22$ contaminazioni d'alluminio (ppm).
+
 
 $$
 \begin{}
@@ -13,7 +16,9 @@ $$
 \end{}
 $$
 
+
 Cerchiamo un modello che sia appropriato per questi dati, scegliendo tra le distribuzioni normale, lognormale, esponenziale e Weibull, costruendo i grafici di probabilità per ciascuna di queste distribuzioni.
+
 
 ---
 a.a 2024/2025 — R. Bellio \hfill 24 / 26

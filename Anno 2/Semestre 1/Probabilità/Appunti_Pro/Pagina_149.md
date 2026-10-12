@@ -1,9 +1,12 @@
 <!-- Pagina 149 -->
 
+
 * DISTRIBUZIONE NULLA di $T$ : vale sotto $H_0$
 * DISTRIBUZIONE ALTERNATIVA di $T$ : " " $H_1$
 
+
 * TIPI DI IPOTESI
+
 
 * IPOTESI ALTERNATIVA UNILATERALE
 
@@ -21,7 +24,10 @@ $$
 
 NOTA BENE $H_0: \theta \leq \theta_0$ è lo stesso se $H_1: \theta > \theta_0$
 
+
 * IPOTESI ALTERNATIVA BILATERALE
+
+
 
 
 $$

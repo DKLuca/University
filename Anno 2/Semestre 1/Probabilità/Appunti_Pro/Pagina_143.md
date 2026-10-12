@@ -1,8 +1,11 @@
 <!-- Pagina 143 -->
 
+
 2
 
+
 Mediante la verifica d'ipotesi
+
 
 $$
 \begin{matrix}
@@ -13,7 +16,9 @@ $$
 \end{matrix}
 $$
 
+
 Analogia con un processo penale
+
 
 $$
 \left\lbrace
@@ -23,6 +28,7 @@ $$
 \end{aligned}
 \right.
 $$
+
 
 $$
 \left\lbrace
@@ -37,6 +43,7 @@ $$
 \end{aligned}
 \right.
 $$
+
 
 - \underline{STATISTICA TEST} : è una statistica che \\
 ($T$ o $Z$) utilizziamo per decidere \\

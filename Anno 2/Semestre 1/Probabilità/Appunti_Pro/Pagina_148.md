@@ -1,10 +1,14 @@
 <!-- Pagina 148 -->
 
+
 ES: STATISTICA TEST NORMALE (7)
+
 
 $n = 36$ pesi $X_1, \dots, X_n$ CCS
 
+
 $\sigma = 3.6 \, \text{kg}$ (NOTA)
+
 
 $$
 \left\lbrace 
@@ -15,6 +19,7 @@ V(X_i) = \sigma^2
 \right.
 $$
 
+
 $$
 \left\lbrace 
 \begin{array}{l}
@@ -24,27 +29,34 @@ H_1: \quad \mu \neq 68 \longrightarrow \text{cioè } \mu > 68 \text{ oppure } \m
 \right.
 $$
 
+
 $$
 T = \overline{X} \sim N\left(\mu, \frac{3.6^2}{36}\right) \quad \begin{smallmatrix} \text{STATISTICA} \\ \text{TEST} \end{smallmatrix}
 $$
+
 
 $$
 R_C = \left\lbrace T < 66.8 \quad \text{oppure} \quad T > 69.2 \right\rbrace
 $$
 
+
 $$
 \alpha = P_{H_0}\left(\overline{X} < 66.8\right) + P_{H_0}\left(\overline{X} > 69.2\right)
 $$
+
 
 $$
 \parallel
 $$
 
+
 $$
 0.0228 \quad + 0.0228 = 0.0455
 $$
 
+
 $\beta$ dipende dal vero $\mu$: per
+
 
 $$
 \begin{array}{l}

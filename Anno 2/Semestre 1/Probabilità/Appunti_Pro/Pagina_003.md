@@ -1,6 +1,8 @@
 <!-- Pagina 3 -->
 
+
 - Si estende a funzioni di $2$ (o più) v.c.: (3)
+
 
 $$
 E \left[ g(X,Y) \right] = 
@@ -10,22 +12,30 @@ E \left[ g(X,Y) \right] =
 \end{cases}
 $$
 
+
 Il caso speciale $g(X,Y) = X$ o $g(X,Y) = Y$ sono immediati:
+
 
 $$
 E(X) = \sum_{x} \sum_{y} x \, p_{XY}(x,y) = \sum_{x} x \underbrace{\sum_{y} p_{XY}(x,y)}_{p_{X}(x)}
 $$
 
+
 (caso discreto) (per esempio)
+
 
 ESERCIZIO 4.3
 
+
 $C = \text{costo per giocare}$
+
 
 $Y = \text{vincita netta}$
 
+
 - vinco $3$ dollari con jack o regina
 - vinco $5$ dollari con asso o re
+
 
 $$
 \begin{array}{c|c}
@@ -39,6 +49,8 @@ y & p_{Y}(y) \\
 \end{array}
 $$
 
+
 $C$ per gioco equo?
+
 
 $E(Y) = 0$

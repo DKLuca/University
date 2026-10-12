@@ -1,16 +1,21 @@
 <!-- Pagina 134 -->
 
+
 $$
 (\bar{y} - \bar{x}) \pm 2.771 \sqrt{\frac{1.5}{14} + \frac{1.8}{16}}
 $$
+
 
 $$
 \Rightarrow (0.701, \, 3.299)
 $$
 
+
 (III) OSSERVAZIONI APPAIATE
 
+
 ESEMPIO: Misuro carico di rottura per $n=8$ provini di tessuto (diversi tra loro) su due diversi macchinari
+
 
 $$
 \begin{array}{cccc}
@@ -26,6 +31,8 @@ $$
 \end{array}
 $$
 
+
 $x_1, x_2, \dots, x_n$ ccs $1^{\circ}$ MACCHINARIO
+
 
 $y_1, y_2, \dots, y_n$ ccs $2^{\circ}$ MACCHINARIO

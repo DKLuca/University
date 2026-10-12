@@ -1,19 +1,27 @@
 <!-- Pagina 159 -->
 
+
 VERIFICA D'IPOTESI SULLE MEDIE DI DUE CAMPIONI $7$
+
 
 1) VARIANZE NOTE ($e$ CAMPIONI ELEVATI)
 
+
 2) VARIANZE IGNOTE
+
 
 3) DATI APPAIATI
 
+
 - 1) VARIANZE NOTE (GRANDI CAMPIONI)
+
 
 ASSUNZIONI:
 
+
 i) $X_1, X_2, \dots, X_{n_x}$ CCS 
 $n_x$ elevato
+
 
 $$
 \left\lbrace
@@ -24,10 +32,13 @@ V(X_i) &= \sigma_X^2
 \right.
 $$
 
+
 NOTA
+
 
 ii) $Y_1, Y_2, \dots, Y_{n_y}$ CCS
 $n_y$ elevato
+
 
 $$
 \left\lbrace
@@ -38,9 +49,12 @@ V(Y_i) &= \sigma_Y^2
 \right.
 $$
 
+
 NOTA
 
+
 iii) I DUE CAMPIONI SONO INDIPENDENTI
+
 
 $$
 \left\lbrace
@@ -53,7 +67,9 @@ H_1 &\colon \mu_X \neq \mu_Y \\
 \right.
 $$
 
+
 Si estende a
+
 
 $$
 H_0 \colon \mu_X - \mu_Y = \Delta_0

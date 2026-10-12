@@ -1,6 +1,8 @@
 <!-- Pagina 69 -->
 
+
 Motivazione per le indagini campionarie
+
 
 * tempo e/o costo
 * la popolazione di interesse può essere infinita e virtuale

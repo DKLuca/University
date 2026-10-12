@@ -1,6 +1,8 @@
 <!-- Pagina 67 -->
 
+
 Inferenza Statistica
+
 
 * Il punto di partenza di una indagine statistica è costituito da un insieme (la **popolazione di riferimento**), che costituisce l'ambito di interesse;
 * gli elementi di questo insieme (persone, componenti elettronici, titoli azionari, $\dots$ ) vengono indicati come **unità statistiche**;
