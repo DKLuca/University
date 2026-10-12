@@ -1,0 +1,15 @@
+# Script di elaborazione e conversione con chiavi API o file temporanei
+**/converti_appunti_pro.py
+**/check_syntax*.py
+**/fix_github.py
+**/split_markdown.py
+**/unisci_appunti.py
+
+# File di ambiente e chiavi segrete
+.env
+*.env
+*.secret
+
+# Cache e Python
+__pycache__/
+*.py[cod]
