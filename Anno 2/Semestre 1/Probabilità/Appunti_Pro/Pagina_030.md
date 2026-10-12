@@ -1,6 +1,7 @@
 <!-- Pagina 30 -->
 
 Proprietà:
+
 $$
 \left\lbrace
 \begin{aligned}
@@ -29,14 +30,17 @@ $$
 $$
 1 + 2 + 3 \implies X \sim \text{Poisson}(\lambda t)
 $$
+
 $$
 (o \text{ anche si indica } \mathcal{P}(\lambda t))
 $$
 
 - ES: Accessi sito web (in un intervallo di tempo)
+
 $$
 \lambda = 5 \text{ accessi al minuto}
 $$
+
 $$
 P(17 \text{ accessi in } 3 \text{ minuti}) = e^{-15} \frac{15^{17}}{17!} = 0.0847
 $$

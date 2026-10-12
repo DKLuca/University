@@ -23,6 +23,7 @@ T = \frac{\overline{D} - \Delta_0}{\sqrt{\frac{S^2_D}{n}}} \sim t_{n-1} \quad \t
 $$
 
 Nota:
+
 $$
 \begin{cases}
 H_0: \mu_X - \mu_Y = \Delta_0 \\

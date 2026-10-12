@@ -17,6 +17,7 @@ $$
 $$
 \uparrow
 $$
+
 percentile di $N(0,1)$
 
 $$
@@ -28,6 +29,7 @@ $$
 $$
 \uparrow
 $$
+
 FUNZIONE QUANTILE
 
 e per la simmetria di $\phi(z)$ attorno a $z=0$ si ottiene:

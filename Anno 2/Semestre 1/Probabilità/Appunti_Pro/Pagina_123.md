@@ -1,11 +1,13 @@
 <!-- Pagina 123 -->
 
 ES: Produzione pezzi meccanici
+
 $$
 n = 100, \quad \overline{x} = 12.05, \quad \underset{\sigma = 0.2}{\text{SI SUPPONE}}
 $$
 
 IC $95\%$ per $\mu$:
+
 $$
 12.05 - (1.96) \frac{0.2}{\sqrt{10}} < \mu < 12.05 + (1.96) \frac{0.2}{\sqrt{10}}
 $$

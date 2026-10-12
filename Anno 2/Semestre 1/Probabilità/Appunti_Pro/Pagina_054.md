@@ -5,6 +5,7 @@
 $$
 \lambda = 1 / \beta
 $$
+
 TASSO $\swarrow$
 
 - Se $\alpha = 1 \implies X \sim \mathcal{E} (1/\beta)$
@@ -16,6 +17,7 @@ ALTRI CASI PARTICOLARI
 - Se $\alpha = \frac{k}{2}$ ($k$ intero), $\beta = 2 \implies$ DISTRIBUZIONE CHISPAZIO-QUADRATO
 
 - Proprietà: 
+
 $$
 \left\lbrace 
 \begin{aligned}

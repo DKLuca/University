@@ -18,6 +18,7 @@ Definiamo $\lambda = N \cdot p$ tasso passaggio medio
 $$
 P(X=x) = \binom{N}{x} p^x (1-p)^{N-x}
 $$
+
 $$
 = \binom{N}{x} \left(\frac{\lambda}{N}\right)^x \left(1-\frac{\lambda}{N}\right)^{N-x}
 $$

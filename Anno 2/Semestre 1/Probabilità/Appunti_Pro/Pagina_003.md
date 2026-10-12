@@ -15,6 +15,7 @@ Il caso speciale $g(X,Y) = X$ o $g(X,Y) = Y$ sono immediati:
 $$
 E(X) = \sum_{x} \sum_{y} x \, p_{XY}(x,y) = \sum_{x} x \underbrace{\sum_{y} p_{XY}(x,y)}_{p_{X}(x)}
 $$
+
 (caso discreto) (per esempio)
 
 ESERCIZIO 4.3

@@ -11,12 +11,15 @@
 IL LIVELLO PIÙ BASSO A CUI RISULTA SIGNIFICATIVO IL VALORE OSSERVATO DELLA STATISTICA TEST
 
 ES: 
+
 $$
 z_{\text{oss}} = 2 \quad p = P_{H_0} (\left\vert Z \right\vert > 2) = 0.0455
 $$
+
 $\hookrightarrow$ EVIDENZA MODERATA CONTRO $H_0$
 
 $$
 z_{\text{oss}} = 4 \quad p = P_{H_0} (\left\vert Z \right\vert > 4) = 0.0000633
 $$
+
 $\hookrightarrow$ EVIDENZA FORTE CONTRO $H_0$

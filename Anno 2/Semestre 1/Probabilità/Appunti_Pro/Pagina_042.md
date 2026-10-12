@@ -1,6 +1,7 @@
 <!-- Pagina 42 -->
 
 - L'approssimazione è ritenuta buona se
+
 $$
 \begin{matrix}
 \left\lbrace 
@@ -13,6 +14,7 @@ n(1-p) \ge 5
 $$
 
 - Correzione di continuità (cc):
+
 $$
 \begin{matrix}
 \left\lbrace 
@@ -35,6 +37,7 @@ $$
 $$
 
 Quindi: se
+
 $$
 X \sim P(\lambda) \implies X \stackrel{a}{\sim} \mathcal{N}(\lambda, \lambda)
 $$

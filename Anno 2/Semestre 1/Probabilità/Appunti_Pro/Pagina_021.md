@@ -1,12 +1,15 @@
 <!-- Pagina 21 -->
 
 Otteniamo la distribuzione: definiamo prima cosa gli eventi
+
 $$
 A_i = \left\lbrace \text{Esce } 6 \text{ alla } i\text{-esima prova} \right\rbrace
 $$
+
 $$
 i = 1, 2, 3
 $$
+
 $$
 A_1, A_2, A_3 \quad \text{MUTUAMENTE INDIPENDENTI}
 $$
@@ -14,6 +17,7 @@ $$
 $$
 P(X=0) = P(A_1^c \cap A_2^c \cap A_3^c)
 $$
+
 $$
 = P(A_1^c) P(A_2^c) P(A_3^c) = \left(\frac{5}{6}\right)^3
 $$

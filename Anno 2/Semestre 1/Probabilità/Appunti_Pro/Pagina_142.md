@@ -17,6 +17,7 @@ ES: Dati binari, $12$ difettosi su $100$, è ragionevole concludere che $p = \te
 - IPOTESI ALTERNATIVA $H_1$: è l'ipotesi che vale se RIFIUTO $H_0$.
 
 ES: Dati binari
+
 $$
 \left\lbrace 
 \begin{aligned}

@@ -13,6 +13,7 @@ $X = $ $n^\circ$ di successi nelle $n$ prove
 $$
 X \sim H(N, n, K)
 $$
+
 DISTRIBUZIONE IPERGEOMETRICA
 
 $$

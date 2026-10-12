@@ -5,6 +5,7 @@
 $N = 10$, $k = 7$, $X = n^{\circ}$ di non difettosi
 
 Supporto: se 
+
 $$
 \left\lbrace 
 \begin{array}{ll}

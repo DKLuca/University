@@ -13,9 +13,11 @@ $$
 $$
 \alpha = \sum_{t=28}^{200} P(T=t; p=0.10) = 0.043
 $$
+
 $\llap$ $\llap$ lo più o meno come prima
 
 Se
+
 $$
 \begin{aligned}
 p &= 0.15 : \quad \beta = 0.317 \\

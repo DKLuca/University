@@ -90,6 +90,7 @@ Il caso speciale $g(X,Y) = X$ o $g(X,Y) = Y$ sono immediati:
 $$
 E(X) = \sum_{x} \sum_{y} x \, p_{XY}(x,y) = \sum_{x} x \underbrace{\sum_{y} p_{XY}(x,y)}_{p_{X}(x)}
 $$
+
 (caso discreto) (per esempio)
 
 ESERCIZIO 4.3
@@ -534,6 +535,7 @@ $$
 $$
 
 RIS 7 $a, b \in \mathbb{R}$, $X, Y$ v.c.
+
 $$
 V(aX+bY) = a^2 V(X) + b^2 V(Y) + 2ab \operatorname{cov}(X,Y)
 $$
@@ -623,6 +625,7 @@ $$
 - Interpretazione: è una sintesi della distribuzione di $Y$ quando $X=x$
 
 - Analogamente definiamo la VARIANZA CONDIZIONATA
+
 $$
 V(Y \mid X=x)
 $$
@@ -630,6 +633,7 @@ $$
 - Nota: $E(Y \mid X=x)$ e $V(Y \mid X=x)$ dipendono dal valore di $x$!
 
 Se $X$ e $Y$ sono indipendenti
+
 $$
 E(Y \mid X=x) = E(Y) \quad \text{e} \quad V(Y \mid X=x) = V(Y)
 $$
@@ -684,6 +688,7 @@ x & P_X(x;p) & \\
 1 & p & P(X=0) = 1-p
 \end{array}
 $$
+
 la distribuzione
 
 $$
@@ -697,11 +702,13 @@ $$
 In forma compatta: $P_X(x;p) = p^x(1-p)^{1-x}, \, x = 0, 1$
 
 - Notazione:
+
 $$
 X \sim \text{Bernoulli}(p)
 $$
 
 ES: LANCIOMONETA, $\text{SUCCESSO} \implies \text{esce testa}$
+
 $$
 X \sim \text{Bernoulli}(0,5)
 $$
@@ -745,12 +752,15 @@ $$
 ## Pagina 21
 
 Otteniamo la distribuzione: definiamo prima cosa gli eventi
+
 $$
 A_i = \left\lbrace \text{Esce } 6 \text{ alla } i\text{-esima prova} \right\rbrace
 $$
+
 $$
 i = 1, 2, 3
 $$
+
 $$
 A_1, A_2, A_3 \quad \text{MUTUAMENTE INDIPENDENTI}
 $$
@@ -758,6 +768,7 @@ $$
 $$
 P(X=0) = P(A_1^c \cap A_2^c \cap A_3^c)
 $$
+
 $$
 = P(A_1^c) P(A_2^c) P(A_3^c) = \left(\frac{5}{6}\right)^3
 $$
@@ -797,6 +808,7 @@ $i)$ Posto $q = 1-p$ si ha
 $$
 \underbrace{(p+q)^n}_{1} = \sum_{x=0}^n \binom{n}{x} p^x (1-p)^{n-x} = 1
 $$
+
 $$
 \llap{\phantom{(p+q)^n = }} \hookrightarrow \text{formula di Newton}
 $$
@@ -863,6 +875,7 @@ $X = $ $n^\circ$ di successi nelle $n$ prove
 $$
 X \sim H(N, n, K)
 $$
+
 DISTRIBUZIONE IPERGEOMETRICA
 
 $$
@@ -895,6 +908,7 @@ $$
 $N = 10$, $k = 7$, $X = n^{\circ}$ di non difettosi
 
 Supporto: se 
+
 $$
 \left\lbrace 
 \begin{array}{ll}
@@ -1013,6 +1027,7 @@ Definiamo $\lambda = N \cdot p$ tasso passaggio medio
 $$
 P(X=x) = \binom{N}{x} p^x (1-p)^{N-x}
 $$
+
 $$
 = \binom{N}{x} \left(\frac{\lambda}{N}\right)^x \left(1-\frac{\lambda}{N}\right)^{N-x}
 $$
@@ -1069,6 +1084,7 @@ Commenti:
 ## Pagina 30
 
 Proprietà:
+
 $$
 \left\lbrace
 \begin{aligned}
@@ -1097,14 +1113,17 @@ $$
 $$
 1 + 2 + 3 \implies X \sim \text{Poisson}(\lambda t)
 $$
+
 $$
 (o \text{ anche si indica } \mathcal{P}(\lambda t))
 $$
 
 - ES: Accessi sito web (in un intervallo di tempo)
+
 $$
 \lambda = 5 \text{ accessi al minuto}
 $$
+
 $$
 P(17 \text{ accessi in } 3 \text{ minuti}) = e^{-15} \frac{15^{17}}{17!} = 0.0847
 $$
@@ -1227,6 +1246,7 @@ Ecco perché possiamo utilizzare la distribuzione anche per grandezze fisiche ch
 * STANDARDIZZAZIONE
 
 Sia $X \sim \mathcal{N}(\mu, \sigma^2)$, definiamo
+
 $$
 Z = \frac{X - \mu}{\sigma} : \text{si ha } Z \sim \mathcal{N}(0, 1)
 $$
@@ -1316,6 +1336,7 @@ $$
 $$
 \uparrow
 $$
+
 percentile di $N(0,1)$
 
 $$
@@ -1327,6 +1348,7 @@ $$
 $$
 \uparrow
 $$
+
 FUNZIONE QUANTILE
 
 e per la simmetria di $\phi(z)$ attorno a $z=0$ si ottiene:
@@ -1470,6 +1492,7 @@ APPROSSIMAZIONE NORMALE DELLA BINOMIALE
 ## Pagina 42
 
 - L'approssimazione è ritenuta buona se
+
 $$
 \begin{matrix}
 \left\lbrace 
@@ -1482,6 +1505,7 @@ n(1-p) \ge 5
 $$
 
 - Correzione di continuità (cc):
+
 $$
 \begin{matrix}
 \left\lbrace 
@@ -1504,6 +1528,7 @@ $$
 $$
 
 Quindi: se
+
 $$
 X \sim P(\lambda) \implies X \stackrel{a}{\sim} \mathcal{N}(\lambda, \lambda)
 $$
@@ -1823,6 +1848,7 @@ $$
 $$
 P(T > t) = P(X=0) = e^{-\lambda t}, \text{ quindi } P(T \le t) = 1 - e^{-\lambda t}
 $$
+
 (PASSAGGIO CHIAVE)
 
 ---
@@ -1901,6 +1927,7 @@ $$
 $$
 \lambda = 1 / \beta
 $$
+
 TASSO $\swarrow$
 
 - Se $\alpha = 1 \implies X \sim \mathcal{E} (1/\beta)$
@@ -1912,6 +1939,7 @@ ALTRI CASI PARTICOLARI
 - Se $\alpha = \frac{k}{2}$ ($k$ intero), $\beta = 2 \implies$ DISTRIBUZIONE CHISPAZIO-QUADRATO
 
 - Proprietà: 
+
 $$
 \left\lbrace 
 \begin{aligned}
@@ -1979,6 +2007,7 @@ F_X(x; \alpha, \beta) = \int_0^x \alpha \beta t^{\beta-1} e^{-\alpha t^\beta} dt
 $$
 
 poniamo 
+
 $$
 \begin{array}{l}
 u = \alpha t^\beta \\
@@ -2737,6 +2766,7 @@ Si analizzano $n = 40$ elementi, scelti a caso tra quelli prodotti da un certo m
 $$
 y = (0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 $$
+
 $$
 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) \comma
 $$
@@ -3174,6 +3204,7 @@ Def
 $$
 P\left(\hat{\theta}_L < \theta < \hat{\theta}_U\right) = 1 - \alpha, \quad 0 < \alpha < 1
 $$
+
 $$
 \forall \theta \in \Theta
 $$
@@ -3247,11 +3278,13 @@ $$
 ## Pagina 123
 
 ES: Produzione pezzi meccanici
+
 $$
 n = 100, \quad \overline{x} = 12.05, \quad \underset{\sigma = 0.2}{\text{SI SUPPONE}}
 $$
 
 IC $95\%$ per $\mu$:
+
 $$
 12.05 - (1.96) \frac{0.2}{\sqrt{10}} < \mu < 12.05 + (1.96) \frac{0.2}{\sqrt{10}}
 $$
@@ -3354,6 +3387,7 @@ e l'IC è quindi
 $$
 \overline{x} \pm t_{n-1; 1-\alpha/2} \frac{S}{\sqrt{n}}
 $$
+
 *(Nota: percentile $1-\alpha/2$ di $t_{n-1}$)*
 
 * Nota: se $n$ è elevato $t_{n-1} \sim \mathcal{N}(0,1)$, confermando che per grandi campioni l'effetto di utilizzare $S^2$ è trascurabile.
@@ -3397,6 +3431,7 @@ $$
 $$
 X_1, X_2, \dots, X_n \quad \text{CCS} \quad X_i \sim N(\mu, \sigma^2)
 $$
+
 (DATI DISPONIBILI)
 
 $X_0$ IGNOTA
@@ -3478,11 +3513,13 @@ IC DIFFERENZA TRA DUE MEDIE (CASO NUMEROSITÀ CAMPIONARIE ELEVATE)
 ASSUNZIONI
 
 i) $X_1, X_2, \dots, X_{n_X}$ CCS
+
 $$
 E(X_i) = \mu_X \quad , \quad V(X_i) = \sigma^2_X \quad \text{NOTA}
 $$
 
 ii) $Y_1, Y_2, \dots, Y_{n_Y}$ CCS
+
 $$
 E(Y_i) = \mu_Y \quad , \quad V(Y_i) = \sigma^2_Y \quad \text{NOTA}
 $$
@@ -3490,6 +3527,7 @@ $$
 iii) I DUE CAMPIONI SONO INDIPENDENTI
 
 Dal TLC:
+
 $$
 \begin{aligned}
 \downarrow \quad & \overline{X} \stackrel{a}{\sim} N\left(\mu_X, \frac{\sigma^2_X}{n_X}\right) \\
@@ -3828,6 +3866,7 @@ ES: Dati binari, $12$ difettosi su $100$, è ragionevole concludere che $p = \te
 - IPOTESI ALTERNATIVA $H_1$: è l'ipotesi che vale se RIFIUTO $H_0$.
 
 ES: Dati binari
+
 $$
 \left\lbrace 
 \begin{aligned}
@@ -3989,9 +4028,11 @@ $$
 $$
 \alpha = \sum_{t=28}^{200} P(T=t; p=0.10) = 0.043
 $$
+
 $\llap$ $\llap$ lo più o meno come prima
 
 Se
+
 $$
 \begin{aligned}
 p &= 0.15 : \quad \beta = 0.317 \\
@@ -4140,14 +4181,17 @@ $R_{0.05}$ $\to$ per indicare il valore di $\alpha$
 IL LIVELLO PIÙ BASSO A CUI RISULTA SIGNIFICATIVO IL VALORE OSSERVATO DELLA STATISTICA TEST
 
 ES: 
+
 $$
 z_{\text{oss}} = 2 \quad p = P_{H_0} (\left\vert Z \right\vert > 2) = 0.0455
 $$
+
 $\hookrightarrow$ EVIDENZA MODERATA CONTRO $H_0$
 
 $$
 z_{\text{oss}} = 4 \quad p = P_{H_0} (\left\vert Z \right\vert > 4) = 0.0000633
 $$
+
 $\hookrightarrow$ EVIDENZA FORTE CONTRO $H_0$
 
 ---
@@ -4183,6 +4227,7 @@ VERIFICA DI IPOTESI SULLA MEDIA (VARIANZA NOTA)
 
 $X_1, X_2, \dots, X_n$ ccs 
 $n$ elevato
+
 $$
 \left\lbrace \begin{aligned}
 E(X_i) &= \mu \\
@@ -4326,6 +4371,7 @@ LIVELLO $IC = 1 - P(\text{errore } I^\circ \text{TIPO})$
 
 - GRANDI CAMPIONI ($n \geq 30$): rimpiazzo $\sigma^2$ con $S^2$
 - PICCOLI CAMPIONI: abbiamo risultati per campioni NORMALI
+
 $$
 X_1, X_2, \dots, X_n \text{ ccs } X_i \sim N(\mu, \sigma^2)
 $$
@@ -4338,6 +4384,7 @@ H_1: &\quad \mu \neq \mu_0
 $$
 
 Sotto $H_0$:
+
 $$
 T = \frac{\overline{X} - \mu_0}{\sqrt{\frac{S^2}{n}}} \sim t_{n-1}
 $$
@@ -4347,6 +4394,7 @@ R_\alpha = \left\lbrace |t| > t_{n-1; 1-\alpha/2} \right\rbrace
 $$
 
 P-VALUE:
+
 $$
 p = 2 \left( 1 - F_{t_{n-1}}(|t_{oss}|) \right)
 $$
@@ -4379,6 +4427,7 @@ ASSUNZIONI:
 
 i) $X_1, X_2, \dots, X_{n_x}$ CCS 
 $n_x$ elevato
+
 $$
 \left\lbrace
 \begin{aligned}
@@ -4387,10 +4436,12 @@ V(X_i) &= \sigma_X^2
 \end{aligned}
 \right.
 $$
+
 NOTA
 
 ii) $Y_1, Y_2, \dots, Y_{n_y}$ CCS
 $n_y$ elevato
+
 $$
 \left\lbrace
 \begin{aligned}
@@ -4399,6 +4450,7 @@ V(Y_i) &= \sigma_Y^2
 \end{aligned}
 \right.
 $$
+
 NOTA
 
 iii) I DUE CAMPIONI SONO INDIPENDENTI
@@ -4413,6 +4465,7 @@ H_1 &\colon \mu_X \neq \mu_Y \\
 \end{aligned}
 \right.
 $$
+
 Si estende a
 
 $$
@@ -4475,6 +4528,7 @@ T = \frac{\overline{D} - \Delta_0}{\sqrt{\frac{S^2_D}{n}}} \sim t_{n-1} \quad \t
 $$
 
 Nota:
+
 $$
 \begin{cases}
 H_0: \mu_X - \mu_Y = \Delta_0 \\
@@ -4507,12 +4561,15 @@ H_1: &\quad p \neq p_0
 \end{aligned}
 \right.
 $$
+
 $\hookrightarrow$ oppure $H_1$ UNILATERALE
 
 Sotto $H_0$: 
+
 $$
 n \hat{p} = \sum_{i=1}^n X_i \sim B(n, p_0)
 $$
+
 $$
 TLC \quad \hat{p} \stackrel{a}{\sim} N\left(p_0, \frac{p_0(1-p_0)}{n}\right)
 $$
@@ -4522,6 +4579,7 @@ STATISTICA TEST: di solito si usa la v.c. standardizzata
 $$
 Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} \stackrel{a}{\sim} N(0,1)
 $$
+
 Sotto $H_0$
 
 ---

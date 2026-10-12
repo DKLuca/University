@@ -13,6 +13,7 @@ Def
 $$
 P\left(\hat{\theta}_L < \theta < \hat{\theta}_U\right) = 1 - \alpha, \quad 0 < \alpha < 1
 $$
+
 $$
 \forall \theta \in \Theta
 $$

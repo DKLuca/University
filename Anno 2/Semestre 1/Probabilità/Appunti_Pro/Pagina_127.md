@@ -28,6 +28,7 @@ $$
 $$
 X_1, X_2, \dots, X_n \quad \text{CCS} \quad X_i \sim N(\mu, \sigma^2)
 $$
+
 (DATI DISPONIBILI)
 
 $X_0$ IGNOTA

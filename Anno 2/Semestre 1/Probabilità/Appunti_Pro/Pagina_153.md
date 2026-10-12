@@ -4,6 +4,7 @@ VERIFICA DI IPOTESI SULLA MEDIA (VARIANZA NOTA)
 
 $X_1, X_2, \dots, X_n$ ccs 
 $n$ elevato
+
 $$
 \left\lbrace \begin{aligned}
 E(X_i) &= \mu \\

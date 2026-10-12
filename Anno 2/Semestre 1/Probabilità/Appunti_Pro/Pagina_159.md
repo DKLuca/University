@@ -14,6 +14,7 @@ ASSUNZIONI:
 
 i) $X_1, X_2, \dots, X_{n_x}$ CCS 
 $n_x$ elevato
+
 $$
 \left\lbrace
 \begin{aligned}
@@ -22,10 +23,12 @@ V(X_i) &= \sigma_X^2
 \end{aligned}
 \right.
 $$
+
 NOTA
 
 ii) $Y_1, Y_2, \dots, Y_{n_y}$ CCS
 $n_y$ elevato
+
 $$
 \left\lbrace
 \begin{aligned}
@@ -34,6 +37,7 @@ V(Y_i) &= \sigma_Y^2
 \end{aligned}
 \right.
 $$
+
 NOTA
 
 iii) I DUE CAMPIONI SONO INDIPENDENTI
@@ -48,6 +52,7 @@ H_1 &\colon \mu_X \neq \mu_Y \\
 \end{aligned}
 \right.
 $$
+
 Si estende a
 
 $$

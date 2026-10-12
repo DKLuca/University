@@ -28,6 +28,7 @@ F_X(x; \alpha, \beta) = \int_0^x \alpha \beta t^{\beta-1} e^{-\alpha t^\beta} dt
 $$
 
 poniamo 
+
 $$
 \begin{array}{l}
 u = \alpha t^\beta \\

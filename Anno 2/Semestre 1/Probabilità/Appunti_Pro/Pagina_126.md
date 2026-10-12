@@ -11,6 +11,7 @@ e l'IC è quindi
 $$
 \overline{x} \pm t_{n-1; 1-\alpha/2} \frac{S}{\sqrt{n}}
 $$
+
 *(Nota: percentile $1-\alpha/2$ di $t_{n-1}$)*
 
 * Nota: se $n$ è elevato $t_{n-1} \sim \mathcal{N}(0,1)$, confermando che per grandi campioni l'effetto di utilizzare $S^2$ è trascurabile.

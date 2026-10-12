@@ -14,6 +14,7 @@ x & P_X(x;p) & \\
 1 & p & P(X=0) = 1-p
 \end{array}
 $$
+
 la distribuzione
 
 $$
@@ -27,11 +28,13 @@ $$
 In forma compatta: $P_X(x;p) = p^x(1-p)^{1-x}, \, x = 0, 1$
 
 - Notazione:
+
 $$
 X \sim \text{Bernoulli}(p)
 $$
 
 ES: LANCIOMONETA, $\text{SUCCESSO} \implies \text{esce testa}$
+
 $$
 X \sim \text{Bernoulli}(0,5)
 $$

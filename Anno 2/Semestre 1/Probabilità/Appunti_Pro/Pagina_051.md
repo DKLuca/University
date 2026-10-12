@@ -25,4 +25,5 @@ $$
 $$
 P(T > t) = P(X=0) = e^{-\lambda t}, \text{ quindi } P(T \le t) = 1 - e^{-\lambda t}
 $$
+
 (PASSAGGIO CHIAVE)

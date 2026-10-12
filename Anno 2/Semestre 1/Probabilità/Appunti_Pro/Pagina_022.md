@@ -13,6 +13,7 @@ $i)$ Posto $q = 1-p$ si ha
 $$
 \underbrace{(p+q)^n}_{1} = \sum_{x=0}^n \binom{n}{x} p^x (1-p)^{n-x} = 1
 $$
+
 $$
 \llap{\phantom{(p+q)^n = }} \hookrightarrow \text{formula di Newton}
 $$

@@ -7,6 +7,7 @@ Si analizzano $n = 40$ elementi, scelti a caso tra quelli prodotti da un certo m
 $$
 y = (0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 $$
+
 $$
 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) \comma
 $$

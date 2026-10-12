@@ -11,6 +11,7 @@ $$
 $$
 
 RIS 7 $a, b \in \mathbb{R}$, $X, Y$ v.c.
+
 $$
 V(aX+bY) = a^2 V(X) + b^2 V(Y) + 2ab \operatorname{cov}(X,Y)
 $$

@@ -19,6 +19,7 @@ Ecco perché possiamo utilizzare la distribuzione anche per grandezze fisiche ch
 * STANDARDIZZAZIONE
 
 Sia $X \sim \mathcal{N}(\mu, \sigma^2)$, definiamo
+
 $$
 Z = \frac{X - \mu}{\sigma} : \text{si ha } Z \sim \mathcal{N}(0, 1)
 $$
